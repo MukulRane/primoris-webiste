@@ -1,0 +1,84 @@
+@import url('../../fonts/fonts.css');
+
+.footer {
+  background-color: #000;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-top {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+
+.footer-logo-social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.footer-logo {
+  width: 300px;
+  height: 72.02px;
+}
+
+.footer-social {
+  display: flex;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.footer-column {
+  flex: 1;
+  margin: 0 20px;
+  text-align: left;
+}
+
+.footer-column h4 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  color: #8B8B8B;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.footer-column a {
+  display: block;
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 5px;
+  font-size: 12px;
+  line-height: 1.5
+}
+
+.social-icon {
+  width: 40px;
+  height: 40px;
+  margin: 0 5px;
+  transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.1);
+}
+
+.footer-bottom {
+  padding-top: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  color: #8B8B8B;
+  font-weight: 700;
+}

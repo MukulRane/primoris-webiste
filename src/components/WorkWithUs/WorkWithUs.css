@@ -1,0 +1,51 @@
+@import url('../../fonts/fonts.css');
+
+.work-with-us-wrapper {
+    background-color: #f9f9f9;
+    width: 100%;
+  }
+
+.work-with-us {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .left-column {
+    width: 50%;
+    padding: 0 40px;
+    text-align: left;
+  }
+  
+  .right-column {
+    width: 50%;
+    padding: 0 40px;
+  }
+
+  .left-column h2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 48px;
+    color: #333333;
+    margin: 0;
+  }
+
+  .left-column p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #25262D;
+    line-height: 1.8;
+  }
+  
+  .left-column img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+  
+  .right-column {
+    display: flex;
+    flex-direction: column;
+  }
+  

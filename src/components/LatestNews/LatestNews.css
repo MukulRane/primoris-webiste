@@ -1,0 +1,92 @@
+@import url('../../fonts/fonts.css');
+
+.latest-news {
+  background-color: #fff;
+  padding: 50px 0;
+  text-align: left;
+}
+
+.news-title {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.news-title p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+.news-content {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  justify-content: space-between;
+}
+
+.news-items, .news-image {
+  flex: 1;
+  padding: 0 10px;
+}
+
+.news-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.news-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 40px;
+  padding-left: 50px; /* Adds 50px padding to the left */
+}
+
+.news-number {
+  font-family: 'Dosis', sans-serif;
+  font-size: 60px;
+  font-weight: bold;
+  margin-right: 30px;
+}
+
+.news-text h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  margin: 0;
+  color: #333333;
+}
+
+.news-text p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  margin: 5px 0 0 0;
+}
+
+.news-item-button {
+  display: flex;
+  align-items: center;
+  padding-left: 50px;
+}
+
+.custom-button {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 50px; /* Makes the button pill-shaped */
+}
+
+.news-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.news-image img {
+  max-width: 100%;
+  border-radius: 10px;
+}

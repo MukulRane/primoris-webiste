@@ -1,0 +1,13 @@
+.offerings {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 50px;
+    text-align: left;
+  }
+  
+  .cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  

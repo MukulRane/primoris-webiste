@@ -1,0 +1,45 @@
+@import url('../../fonts/fonts.css');
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-title {
+    cursor: pointer;
+  }
+  
+  .dropdown-menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    padding: 10px 0;
+    border-radius: 4px;
+    width: 250px;
+    margin-top: 0px;
+  }
+  
+  .dropdown-item {
+    padding: 12px 15px;
+    text-decoration: none;
+    white-space: normal;
+    line-height: 1.2em;
+    letter-spacing: 0.6px;
+    text-transform: capitalize;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    text-align: left;
+  }
+  
+  .dropdown-item + .dropdown-item {
+    border-top: 1px solid #eeeeee;
+  }
+  
+  .dropdown-item:hover {
+    background-color: #f1f1f1;
+  }
+  

@@ -1,0 +1,46 @@
+.approach-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.approach {
+    background-color: #000;
+    color: #fff;
+    padding: 40px 0px;
+    text-align: center;
+    border-radius: 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .approach h2 {
+    font-size: 2rem;
+    margin-bottom: 0;
+    margin-top: 0px;
+  }
+  
+  .approach p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  .approach-title {
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+    display: inline-block;
+    position: relative;
+  }
+  
+  .approach-divider {
+    width: 70%;
+    border-top: 2px solid #fff;
+    margin: 10px auto;
+  }
+  

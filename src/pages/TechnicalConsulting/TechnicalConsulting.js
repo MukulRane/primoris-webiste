@@ -5,8 +5,6 @@ import Approach from '../TechnicalConsulting/components/Approach/Approach';
 import Expertise from '../TechnicalConsulting/Expertise/Expertise';
 import WhyChooseUs from '../TechnicalConsulting/WhyChooseUs/WhyChooseUs';
 import ContactForm from '../TechnicalConsulting/ContactForm/ContactForm';
-import Footer from '../../components/Footer/Footer';
-import Navbar from '../../components/Navbar/Navbar';
 
 const TechnicalConsulting = () => {
   return (
@@ -15,8 +13,8 @@ const TechnicalConsulting = () => {
       <AboutUs />
       <Approach />
       <Expertise />
-      <WhyChooseUs />
-      {/* <ContactForm /> */}
+      {/* <WhyChooseUs /> */}
+      <ContactForm />
     </div>
   );
 };

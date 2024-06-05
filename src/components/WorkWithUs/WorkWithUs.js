@@ -13,10 +13,10 @@ const WorkWithUs = () => {
         <img src={require('../../images/workwithus.jpg')} alt="Work with us" />
       </div>
       <div className="right-column">
-        <FormField label="Name*" />
-        <FormField label="Email*" type="email" />
-        <FormField label="Phone Number*" type="tel" />
-        <FormField label="Comment or Message" rows="7" />
+        <FormField label="Name*" labelStyle={{ fontFamily: 'Dosis, sans-serif', fontSize: '15px', color: '#000' }} />
+        <FormField label="Email*" type="email" labelStyle={{ fontFamily: 'Dosis, sans-serif', fontSize: '15px', color: '#000' }} />
+        <FormField label="Phone Number*" type="tel" labelStyle={{ fontFamily: 'Dosis, sans-serif', fontSize: '15px', color: '#000' }} />
+        <FormField label="Comment or Message" rows="7" labelStyle={{ fontFamily: 'Dosis, sans-serif', fontSize: '15px', color: '#000' }} />
         <CustomButton text="Submit" />
       </div>
     </section>

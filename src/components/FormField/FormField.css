@@ -1,33 +1,29 @@
 @import url('../../fonts/fonts.css');
 
 .form-field {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 25px;
-  }
-  
-  .form-field label {
-    font-family: 'Dosis', sans-serif;
-    font-size: 15px;
-    margin-bottom: 5px;
-    text-align: left;
-    color: #000;
-  }
-  
-  .form-field input{
-    padding: 10px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
-    border: 1px solid #eee;
-    border-radius: 4px;
-  }
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
+}
 
-  .form-field textarea {
-    padding: 10px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
-    border: 1px solid #eee;
-    border-radius: 4px;
-    margin-bottom: 15px;
-  }
-  
+.form-field label {
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+.form-field input {
+  padding: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  border: 1px solid #eee;
+  border-radius: 4px;
+}
+
+.form-field textarea {
+  padding: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}

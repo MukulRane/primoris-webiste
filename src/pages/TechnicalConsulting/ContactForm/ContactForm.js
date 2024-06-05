@@ -1,24 +1,24 @@
 import React from 'react';
+import '../../../components/WorkWithUs/WorkWithUs';
 import './ContactForm.css';
-import CustomButton from '../ContactForm/ContactForm';
+import FormField from '../../../components/FormField/FormField';
+import CustomButton from '../../../components/CustomButton/CustomButton';
 
 const ContactForm = () => {
   return (
-    <section className="contact-form">
-      <h2>Connect With Us</h2>
-      <p>Ready to take your business to new heights? Contact our team today to discuss your consulting needs and schedule a consultation. Let’s unlock the full potential of your business together.</p>
-      <form>
-        <div className="form-group">
-          <label htmlFor="email">Email*</label>
-          <input type="email" id="email" name="email" required />
-        </div>
-        <div className="form-group">
-          <label htmlFor="name">Name*</label>
-          <input type="text" id="name" name="name" required />
-        </div>
-        <CustomButton text="Submit" />
-      </form>
+    <div className='work-with-us-wrapper'>
+        <section className="work-with-us">
+      <div className="left-column">
+        <h2>Connect With Us</h2>
+        <p>Ready to take your business to new heights? Contact our team today to discuss your consulting needs and schedule a consultation. Let’s unlock the full potential of your business together.</p>
+      </div>
+      <div className="contact-right-column">
+        <FormField label="Email*" type="email" labelStyle={{ fontFamily: 'Roboto, sans-serif', fontSize: '16px', color: '#000' }} />
+        <FormField label="Name*" labelStyle={{ fontFamily: 'Roboto, sans-serif', fontSize: '16px', color: '#000' }} />
+        <CustomButton text="SUBMIT" />
+      </div>
     </section>
+    </div>
   );
 };
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import Dropdown from '../Dropdown/Dropdown';
 import './Navbar.css';
 import logo from '../../images/primoris-logo-navbar.png';
@@ -45,8 +45,11 @@ const resources = [
 ];
 
 const Navbar = () => {
+  const location = useLocation();
+  const isErpPage = location.pathname === '/erp-functional-consulting';
+
   return (
-    <div className="navbar-container">
+    <div className={`navbar-container ${isErpPage ? 'transparent' : ''}`}>
       <div className="navbar">
         <div className="logo-container">
           <img src={logo} alt="Primoris Systems" className="logo" />

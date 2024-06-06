@@ -5,6 +5,7 @@ import Footer from './components/Footer/Footer';
 import TechnicalConsulting from './pages/TechnicalConsulting/TechnicalConsulting';
 import HomePage from './pages/HomePage/HomePage';
 import './App.css';
+import ERPFunctionalConsulting from './pages/ERPFunctionalConsulting/ERPFunctionalConsulting';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/technical-consulting" element={<TechnicalConsulting />} />
+          <Route path="/erp-functional-consulting" element={<ERPFunctionalConsulting />} />
           {/* Add other routes here as needed */}
         </Routes>
       </main>

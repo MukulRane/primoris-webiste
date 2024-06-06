@@ -19,7 +19,7 @@
 
 .divider {
   width: 70%;
-  border-top: 2px solid #000;
+  border-top: 2px solid #000; /* Default color */
   margin: 10px 0;
   position: relative;
   left: -100%;

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './SectionTitle.css';
 
-const SectionTitle = ({ title }) => {
+const SectionTitle = ({ title, dividerColor = '#000' }) => {
   const [inView, setInView] = useState(false);
 
   useEffect(() => {
@@ -24,7 +24,7 @@ const SectionTitle = ({ title }) => {
   return (
     <div className="section-title">
       <h2>{title}</h2>
-      <div className={`divider ${inView ? 'in-view' : ''}`}></div>
+      <div className={`divider ${inView ? 'in-view' : ''}`} style={{ borderTopColor: dividerColor }}></div>
     </div>
   );
 };

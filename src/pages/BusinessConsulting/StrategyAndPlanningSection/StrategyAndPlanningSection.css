@@ -1,0 +1,19 @@
+.strategy-planning-section-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.strategy-planning-section {
+    text-align: left;
+    padding: 50px 20px;
+    max-width: 1200px;
+  }
+  
+  .strategy-planning-section-buttons-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  

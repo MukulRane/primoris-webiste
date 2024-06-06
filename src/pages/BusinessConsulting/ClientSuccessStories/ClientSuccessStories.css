@@ -1,0 +1,38 @@
+.client-success-wrapper {
+    width: 100%;
+    background-color: #000; /* Black background */
+    padding: 50px 0;
+  }
+  
+  .client-success {
+    text-align: left;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff; /* White text color */
+  }
+  
+  .client-success-text {
+    width: 50%;
+    padding-right: 20px;
+  }
+  
+  .client-success-text p {
+    font-size: 16px;
+    line-height: 1.8;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .client-success-image {
+    width: 50%;
+  }
+  
+  .client-success-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  

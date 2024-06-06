@@ -6,6 +6,7 @@ import TechnicalConsulting from './pages/TechnicalConsulting/TechnicalConsulting
 import HomePage from './pages/HomePage/HomePage';
 import './App.css';
 import ERPFunctionalConsulting from './pages/ERPFunctionalConsulting/ERPFunctionalConsulting';
+import BusinessConsulting from './pages/BusinessConsulting/BusinessConsulting';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/technical-consulting" element={<TechnicalConsulting />} />
           <Route path="/erp-functional-consulting" element={<ERPFunctionalConsulting />} />
+          <Route path="/business-consulting" element={<BusinessConsulting />} />
           {/* Add other routes here as needed */}
         </Routes>
       </main>

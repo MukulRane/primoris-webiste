@@ -1,0 +1,37 @@
+.simple-card {
+    display: flex;
+    width: 100%;
+    height: 60px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Equal shadow on all sides */
+    overflow: hidden; /* Ensure no overflow issues */
+  }
+  
+  .simple-card-left {
+    width: 15%;
+    background-color: #3a8bc8; /* Dark blue background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .simple-card-right {
+    width: 85%;
+    background-color: #63a7da; /* Sky blue background */
+    display: flex;
+    align-items: center;
+    padding-left: 20px; /* Add padding for text */
+  }
+  
+  .simple-card-right p {
+    color: white;
+    font-size: 1rem;
+    margin: 0;
+  }
+  
+  .icon {
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+  }
+  

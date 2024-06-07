@@ -1,0 +1,73 @@
+.services-section {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+.accordion-container {
+  width: 50%;
+}
+
+.section-title-container {
+  margin-bottom: 20px; /* Add space below the SectionTitle */
+}
+
+.accordion-item {
+  background-color: #FFFFFF;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  overflow: hidden; /* Ensure no overflow issues */
+  transition: max-height 0.5s ease, padding 0.5s ease; /* Add transition for max-height and padding */
+}
+
+.accordion-header {
+  padding: 20px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  color: #3A8BC8;
+}
+
+.accordion-header.active {
+  background-color: #FFFFFF;
+  color: #3A8BC8;
+  border-left: 6px solid #3A8BC8;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 20px;
+  display: block;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: #333;
+  line-height: 1.5;
+  transition: max-height 0.5s ease, padding 0.5s ease; /* Add transition for max-height and padding */
+}
+
+.accordion-content.active {
+  max-height: 200px; /* Adjust according to content size */
+  padding: 20px 20px 20px 20px;
+  border-left: 6px solid #3A8BC8;
+}
+
+.image-container {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  clip-path: url(#clipping-path); /* Use the SVG clipping path */
+}

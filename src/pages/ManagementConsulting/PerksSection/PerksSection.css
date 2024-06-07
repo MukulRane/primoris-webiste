@@ -1,0 +1,23 @@
+.perks-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff; /* Add a background color for distinction */
+    max-width: 1200px;
+    margin: 0 auto; /* Center the section */
+  }
+  
+  .perks-section .description {
+    font-size: 16px;
+    color: #333;
+    margin: 0 auto 60px; /* Center and add bottom margin */
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5; /* Improve readability */
+  }
+  
+  .perks-cards-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  

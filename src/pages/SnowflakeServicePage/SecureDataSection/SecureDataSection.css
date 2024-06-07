@@ -1,0 +1,23 @@
+.secure-data-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+  }
+  
+  .secure-data-box {
+    border: 2px solid #3A8BC8; /* Blue border */
+    border-radius: 10px; /* Rounded corners */
+    max-width: 1200px;
+    text-align: center;
+  }
+  
+  .secure-data-box p {
+    font-family: 'Roboto', sans-serif;
+    color: #3A8BC8; /* Blue text color */
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 36px;
+    margin: 25px;
+  }
+  

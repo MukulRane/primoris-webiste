@@ -1,0 +1,71 @@
+.snowflake-hero-section-erp {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  overflow: hidden; /* Ensure no overflow issues */
+  background-image: url('../../../images/snowflake-hero.jpg'); /* Set the background image */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Make the background image fixed */
+  z-index: 0;
+}
+
+.snowflake-hero-text-erp {
+  z-index: 2;
+  max-width: 80%;
+  color: #fff;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Align items to the center */
+}
+
+.snowflake-hero-text-erp h1 {
+  font-family: 'Dosis', sans-serif;
+  font-size: 48px;
+  line-height: 1;
+  margin-top: 0px;
+  margin-bottom: 40px;
+}
+
+.snowflake-hero-text-p1 {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  line-height: 1.8;
+  font-size: 18px;
+  margin-bottom: 0px;
+}
+
+.snowflake-hero-text-p2 {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  line-height: 1.8;
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+.snowflake-contact-btn-erp {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: white;
+  background-color: #0066b2;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.snowflake-contact-btn-erp:hover {
+  background-color: #005099;
+}
+
+.snowflake-hero-image-tint {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Add a black tint */
+  z-index: 1;
+}

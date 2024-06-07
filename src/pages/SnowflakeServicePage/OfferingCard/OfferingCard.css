@@ -1,0 +1,32 @@
+.offering-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 32%; /* Adjusted width for 3 cards per row */
+    box-sizing: border-box;
+    transition: transform 0.3s ease;
+    border-top: 6px solid #3A8BC8;
+  }
+  
+  .offering-card:hover {
+    background-color: #f7f7f7;
+  }
+  
+  .offering-card h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    margin-bottom: 10px;
+    line-height: 1.4;
+    font-weight: 600;
+    color: #333; /* Blue color for the title */
+  }
+  
+  .offering-card p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #6F6F6F;
+    line-height: 1.5;
+    text-align: left;
+  }
+  

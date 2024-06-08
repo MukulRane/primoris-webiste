@@ -12,6 +12,8 @@ import SnowflakeServicePage from './pages/SnowflakeServicePage/SnowflakeServiceP
 import ManagedServices from './pages/ManagedServices/ManagedServices';
 import StaffingAndHrSolutions from './pages/StaffingAndHrSolutions/StaffingAndHrSolutions';
 import DataScienceConsulting from './pages/DataScienceConsulting/DataScienceConsulting';
+import SapHero from './pages/SapDevelopment/SapHero/SapHero';
+import SapDevelopment from './pages/SapDevelopment/SapDevelopment';
 
 function App() {
   return (
@@ -30,6 +32,7 @@ function App() {
           <Route path="/managed-services" element={<ManagedServices />} />
           <Route path="/staffing-hr-solutions" element={<StaffingAndHrSolutions />} />
           <Route path="/data-science-consulting" element={<DataScienceConsulting />} />
+          <Route path="/sap-consulting" element={<SapDevelopment />} />
           {/* Add other routes here as needed */}
         </Routes>
       </main>

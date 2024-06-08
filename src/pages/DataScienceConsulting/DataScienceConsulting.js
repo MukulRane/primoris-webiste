@@ -5,6 +5,7 @@ import DataScienceOfferSection from './DataScienceOfferSection/DataScienceOfferS
 import ModelsOfCollaborationSection from './ModelsOfCollaborationSection/ModelsOfCollaborationSection';
 import TechnologiesMethodsSection from './TechnologiesMethodsSection/TechnologiesMethodsSection';
 import RelatedServicesSection from './RelatedServicesSection/RelatedServicesSection';
+import ContactForm from '../TechnicalConsulting/ContactForm/ContactForm';
 
 const DataScienceConsulting = () => {
   return (
@@ -15,6 +16,7 @@ const DataScienceConsulting = () => {
       <ModelsOfCollaborationSection />
       <TechnologiesMethodsSection />
       <RelatedServicesSection />
+      <ContactForm />
     </div>
   );
 };

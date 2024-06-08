@@ -1,0 +1,39 @@
+.our-services-section {
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 15px;
+    padding-left: 0px;
+    padding-right: 0px;
+    background-color: #fff; /* Background color for distinction */
+    max-width: 1200px;
+    margin: 0 auto; /* Center the section */
+    text-align: left;
+  }
+  
+  .services-cards-container {
+    display: flex;
+    justify-content: space-between; /* Ensure equal space between cards */
+    flex-wrap: wrap; /* Ensure cards wrap to the next line if needed */
+  }
+  
+  @media (max-width: 1200px) {
+    .service-card {
+      flex: 1 1 calc(33.333% - 20px); /* Adjust width for responsiveness */
+      margin: 10px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .service-card {
+      flex: 1 1 calc(50% - 20px); /* Adjust width for smaller screens */
+      margin: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .service-card {
+      flex: 1 1 100%; /* Full width for very small screens */
+      margin: 10px;
+    }
+  }
+  

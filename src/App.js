@@ -9,6 +9,7 @@ import ERPFunctionalConsulting from './pages/ERPFunctionalConsulting/ERPFunction
 import BusinessConsulting from './pages/BusinessConsulting/BusinessConsulting';
 import ManagementConsulting from './pages/ManagementConsulting/ManagementConsulting';
 import SnowflakeServicePage from './pages/SnowflakeServicePage/SnowflakeServicePage';
+import ManagedServices from './pages/ManagedServices/ManagedServices';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path="/business-consulting" element={<BusinessConsulting />} />
           <Route path="/management-consulting" element={<ManagementConsulting />} />
           <Route path="/snowflake-service" element={<SnowflakeServicePage />} />
+          <Route path="/managed-services" element={<ManagedServices />} />
           {/* Add other routes here as needed */}
         </Routes>
       </main>

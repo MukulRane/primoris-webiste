@@ -1,0 +1,38 @@
+.business-function-hiring-section {
+    text-align: left;
+    padding: 50px 20px;
+    background-color: #fff;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .content-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .column {
+    width: 48%;
+  }
+  
+  .item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+  
+  .bullet-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+  }
+  
+  .item p {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+  }
+  

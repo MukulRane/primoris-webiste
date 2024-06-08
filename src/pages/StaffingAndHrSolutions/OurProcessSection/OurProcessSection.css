@@ -1,0 +1,18 @@
+.our-process-section {
+    text-align: left;
+    padding: 50px 20px;
+    background-color: #fff;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .our-process-section p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #333;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  

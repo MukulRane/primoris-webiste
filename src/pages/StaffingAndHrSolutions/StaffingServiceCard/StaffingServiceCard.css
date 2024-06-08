@@ -1,0 +1,39 @@
+.staffing-simple-card {
+    display: flex;
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-bottom: 10px;
+  }
+  
+  .staffing-simple-card-left {
+    width: 15%;
+    background-color: #3a8bc8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .staffing-simple-card-right {
+    width: 85%;
+    background-color: #63a7da;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  .staffing-simple-card-right p {
+    color: white;
+    font-size: 1rem;
+    margin: 0;
+    padding-left: 10px;
+  }
+  
+  .staffing-icon {
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+  }
+  

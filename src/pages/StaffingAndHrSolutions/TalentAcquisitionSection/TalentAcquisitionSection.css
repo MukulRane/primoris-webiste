@@ -1,0 +1,16 @@
+.talent-acquisition-section {
+    text-align: center;
+    padding: 60px 0px;
+    background-color: #fff;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .talent-acquisition-section .talent-description {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-top: 0px;
+  }
+  

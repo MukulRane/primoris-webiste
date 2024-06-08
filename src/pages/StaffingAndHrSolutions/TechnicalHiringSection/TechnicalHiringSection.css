@@ -1,0 +1,35 @@
+.technical-hiring-section {
+    text-align: left;
+    padding: 50px 20px;
+    background-color: #fff;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .technical-hiring-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .technical-cards-container {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .technical-card-wrapper {
+    width: 100%;
+  }
+  
+  .technical-image-container {
+    width: 35%;
+  }
+  
+  .technical-image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  

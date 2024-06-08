@@ -1,0 +1,92 @@
+.grc-card-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .grc-card-section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .grc-card-section-description {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 40px;
+  }
+  
+  .grc-card-section-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  
+  .grc-cards-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .grc-card {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #63a7da;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: white;
+  }
+  
+  .grc-card-icon {
+    width: 15%;
+    background-color: #3a8bc8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px 0 0 5px;
+  }
+  
+  .grc-card-icon svg {
+    color: white;
+    font-size: 24px;
+  }
+  
+  .grc-card-text {
+    width: 85%;
+    padding-left: 20px;
+    font-size: 16px;
+    text-align: left;
+  }
+  
+  .grc-image-container {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .grc-image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  @media (min-width: 1200px) {
+    .grc-card-section-content {
+      flex-wrap: nowrap;
+    }
+  
+    .grc-cards-container {
+      height: auto;
+    }
+  
+    .grc-image-container {
+      height: auto;
+    }
+  }
+  

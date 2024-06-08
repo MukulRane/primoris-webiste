@@ -1,0 +1,72 @@
+.data-science-offer-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .data-science-offer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  
+  .offer-cards-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .offer-card {
+    padding: 0px;
+  }
+  
+  .offer-title {
+    background-color: #3a8bc8;
+    color: white;
+    padding: 12px 0px 12px 12px;
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .offer-points {
+    text-align: left;
+    padding-left: 0px;
+  }
+  
+  .offer-points ul {
+    list-style-type: disc;
+    padding-left: 15px;
+  }
+  
+  .offer-points ul li {
+    font-size: 16px;
+    line-height: 30px;
+  }
+  
+  .offer-image-container {
+    width: 45%;
+  }
+  
+  .offer-image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  @media (max-width: 1199px) {
+    .data-science-offer-content {
+      flex-direction: column;
+    }
+  
+    .offer-cards-container,
+    .offer-image-container {
+      width: 100%;
+    }
+  }
+  

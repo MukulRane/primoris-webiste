@@ -14,7 +14,7 @@ const StrategyAndPlanningSection = () => {
   return (
     <div className="strategy-planning-section-wrapper">
         <div className="strategy-planning-section">
-            <SectionTitle title="Our Services" />
+            <SectionTitle title="Strategy and Planning" />
             <div className="strategy-planning-section-buttons-container">
                 {sectionData.map((title, index) => (
                 <GradientButton key={index} title={title} />

@@ -15,6 +15,7 @@ import DataScienceConsulting from './pages/DataScienceConsulting/DataScienceCons
 import SapDevelopment from './pages/SapDevelopment/SapDevelopment';
 import RiskManagement from './pages/RiskManagement/RiskManagement';
 import BigDataService from './pages/BigDataService/BigDataService';
+import QualityAssurance from './pages/QualityAssurance/QualityAssurance';
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
           <Route path="/sap-consulting" element={<SapDevelopment />} />
           <Route path="/risk-management" element={<RiskManagement />} />
           <Route path="/big-data-consulting" element={<BigDataService />} />
+          <Route path="/quality-assurance" element={<QualityAssurance />} />
           {/* Add other routes here as needed */}
         </Routes>
       </main>

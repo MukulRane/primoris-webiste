@@ -1,0 +1,89 @@
+.quality-assurance-section {
+    text-align: left;
+    padding: 50px 20px;
+    background-color: #fff;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .quality-assurance-section-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: #000;
+    text-align: left;
+  }
+  
+  .quality-assurance-sub-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: #000;
+    text-align: left;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    font-weight: bold;
+  }
+  
+  .qa-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .qa-row {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+  
+  .qa-card {
+    background-color: #000;
+    color: #fff;
+    padding: 15px 20px;
+    border-radius: 16px;
+    flex: 0 0 25%; /* Adjust to a percentage width */
+    min-width: 200px; /* Ensure minimum size for smaller screens */
+    margin-right: 20px;
+    box-sizing: border-box;
+  }
+  
+  .qa-card p {
+    font-family: 'Dosis', sans-serif;
+    font-size: 20px;
+    padding: 8px;
+    margin: 0;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  
+  .qa-description {
+    flex: 1;
+    display: flex;
+    align-items: center;
+  }
+  
+  .qa-description p {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #000;
+    line-height: 1.8;
+  }
+  
+  @media (max-width: 768px) {
+    .qa-row {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    .qa-card {
+      flex: 1 1 100%; /* 100% width on smaller screens */
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+    
+    .qa-description {
+      flex: 1 1 100%;
+    }
+  }
+  

@@ -1,0 +1,58 @@
+.qa-image-quality-assurance-section {
+    text-align: left;
+    padding: 50px 20px;
+    background-color: #fff;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .qa-image-sub-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: #000;
+    text-align: left;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    font-weight: bold;
+  }
+
+  .qa-image-sub-title-no-margin {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: #000;
+    text-align: left;
+    margin-top: 0px;
+    font-weight: bold;
+  }
+
+  .qa-image-sub-sub-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #000;
+    text-align: left;
+    margin-top: 0px;
+  }
+
+  .qa-image-sub-blue-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: #29618F;
+    text-align: center;
+    margin-top: 0px;
+    font-style: italic;
+  }
+
+  .qa-image-circle-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .qa-image-circle-image {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  

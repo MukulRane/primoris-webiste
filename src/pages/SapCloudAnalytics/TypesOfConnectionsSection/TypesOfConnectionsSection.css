@@ -1,0 +1,14 @@
+.types-of-connections-section {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #fff;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.types-of-connections-cards-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}

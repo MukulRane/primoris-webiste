@@ -17,6 +17,7 @@ import RiskManagement from './pages/RiskManagement/RiskManagement';
 import BigDataService from './pages/BigDataService/BigDataService';
 import QualityAssurance from './pages/QualityAssurance/QualityAssurance';
 import SapHana from './pages/SapHana/SapHana';
+import SapCloudAnalytics from './pages/SapCloudAnalytics/SapCloudAnalytics';
 
 function App() {
   return (
@@ -40,6 +41,7 @@ function App() {
           <Route path="/big-data-consulting" element={<BigDataService />} />
           <Route path="/quality-assurance" element={<QualityAssurance />} />
           <Route path="/sap-s4-hana-service" element={<SapHana />} />
+          <Route path="/sap-cloud-analytics" element={<SapCloudAnalytics />} />
           {/* Add other routes here as needed */}
         </Routes>
       </main>

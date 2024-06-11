@@ -1,0 +1,54 @@
+.sap-analytics-cloud-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .sap-analytics-cloud-description {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 40px;
+    line-height: 1.8;
+  }
+
+  .sap-analytics-cloud-subtitle {
+    margin-bottom: 40px;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 0px;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .sap-analytics-cloud-logos-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .sap-analytics-cloud-logos-container img {
+    max-width: 150px;
+    max-height: 100px;
+    width: auto;
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+  
+  .sap-analytics-cloud-logos-container img:hover {
+    transform: scale(1.1);
+  }
+  
+  @media (max-width: 768px) {
+    .sap-analytics-cloud-logos-container {
+      justify-content: center;
+    }
+    
+    .sap-analytics-cloud-logos-container img {
+      margin: 10px;
+    }
+  }
+  

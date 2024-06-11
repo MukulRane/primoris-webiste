@@ -1,0 +1,26 @@
+.sap-analytics-cloud-video-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .sap-analytics-cloud-video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: url('https://i.ytimg.com/vi/acTruobWUUg/maxresdefault.jpg') no-repeat center center;
+    background-size: cover;
+  }
+  
+  .sap-analytics-cloud-video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 1; /* Initially hide the iframe */
+  }

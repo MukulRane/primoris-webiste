@@ -18,6 +18,7 @@ import BigDataService from './pages/BigDataService/BigDataService';
 import QualityAssurance from './pages/QualityAssurance/QualityAssurance';
 import SapHana from './pages/SapHana/SapHana';
 import SapCloudAnalytics from './pages/SapCloudAnalytics/SapCloudAnalytics';
+import SapFiori from './pages/SapFiori/SapFiori';
 
 function App() {
   return (
@@ -42,6 +43,7 @@ function App() {
           <Route path="/quality-assurance" element={<QualityAssurance />} />
           <Route path="/sap-s4-hana-service" element={<SapHana />} />
           <Route path="/sap-cloud-analytics" element={<SapCloudAnalytics />} />
+          <Route path="/sap-fiori" element={<SapFiori />} />
           {/* Add other routes here as needed */}
         </Routes>
       </main>

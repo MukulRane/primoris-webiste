@@ -1,0 +1,95 @@
+.sap-fiori-left-right-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .sap-fiori-left-right-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+  
+  .sap-fiori-left-right-row.left .sap-fiori-left-right-content {
+    order: 1;
+  }
+  
+  .sap-fiori-left-right-row.left .sap-fiori-left-right-image {
+    order: 2;
+  }
+  
+  .sap-fiori-left-right-row.right .sap-fiori-left-right-content {
+    order: 2;
+  }
+  
+  .sap-fiori-left-right-row.right .sap-fiori-left-right-image {
+    order: 1;
+  }
+  
+  .sap-fiori-left-right-image {
+    flex: 1 1 45%;
+    padding: 20px;
+  }
+  
+  .sap-fiori-left-right-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .sap-fiori-left-right-content {
+    flex: 1 1 45%;
+    text-align: left;
+    padding: 20px;
+  }
+  
+  .sap-fiori-left-right-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+    line-height: 1.8;
+  }
+  
+  .sap-fiori-left-right-description {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.8;
+  }
+  
+  .sap-fiori-left-right-description ul {
+    padding-left: 20px;
+  }
+  
+  .sap-fiori-left-right-description li {
+    margin-bottom: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .sap-fiori-left-right-row {
+      flex-direction: column;
+    }
+  
+    .sap-fiori-left-right-row.left .sap-fiori-left-right-content,
+    .sap-fiori-left-right-row.right .sap-fiori-left-right-content {
+      order: 1;
+    }
+  
+    .sap-fiori-left-right-row.left .sap-fiori-left-right-image,
+    .sap-fiori-left-right-row.right .sap-fiori-left-right-image {
+      order: 2;
+    }
+  
+    .sap-fiori-left-right-content {
+      text-align: center;
+    }
+  
+    .sap-fiori-left-right-title {
+      text-align: center;
+    }
+  }
+  

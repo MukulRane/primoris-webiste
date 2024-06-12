@@ -1,0 +1,22 @@
+.enterprise-workforce-management-wrapper {
+    text-align: left;
+    width: 100%;
+    background-color: #fff;
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .enterprise-workforce-management-content {
+    width: 100%;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #333;
+  }
+  
+  .enterprise-workforce-management-content p {
+    margin-bottom: 16px;
+  }
+  

@@ -5,15 +5,21 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheckDouble } from '@fortawesome/free-solid-svg-icons';
 
 const searchMethodologyData = [
-  'Judicial investigations and court hearings',
-  'Tax and financial audits',
-  'Internal investigations, inspections, and audits',
+  'Intuitive assignment creation',
+  'Team scenarios',
+  'Integrated GPS (Google Maps)',
+  'Integrated GISlet by Astec',
+  'Photo-documentation',
+  'Sophisticated synchronisation policy',
+  'Transparent data-transfers including full-range monitoring',
+  '',
+  ''
 ];
 
-const GCMOurSolution = () => {
+const MTechnicianKeyFeatues = () => {
   return (
     <section className="sap-crm-advantages-search-methodology-section">
-      <SectionTitle title="Our Solution" dividerColor="#000" />
+      <SectionTitle title="Key Features of mTechnician" dividerColor="#000" />
       <div className="sap-crm-advantages-search-methodology-content-container">
         {searchMethodologyData.map((item, index) => (
           <div key={index} className={`sap-crm-advantages-search-methodology-methodology-item ${item === '' ? 'placeholder' : ''}`}>
@@ -26,4 +32,4 @@ const GCMOurSolution = () => {
   );
 };
 
-export default GCMOurSolution;
+export default MTechnicianKeyFeatues;

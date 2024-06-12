@@ -24,6 +24,7 @@ import SapHybris from './pages/SapHybris/SapHybris';
 import EnterpriseManagedArchieve from './pages/EnterpriseManagedArchieve/EnterpriseManagedArchieve';
 import EMAForSAP from './pages/EMAForSAP/EMAForSAP';
 import GlobalCaseManagement from './pages/GlobalCaseManagement/GlobalCaseManagement';
+import MTechnician from './pages/MTechnician/MTechnician';
 
 function App() {
   return (
@@ -51,9 +52,10 @@ function App() {
           <Route path="/sap-fiori" element={<SapFiori />} />
           <Route path="/sap-crm" element={<SapCRM />} />
           <Route path="/sap-hybris" element={<SapHybris />} />
-          <Route path="/enterprise-managed-archive" element={<EnterpriseManagedArchieve />} />/global-case-management-ediscovery
+          <Route path="/enterprise-managed-archive" element={<EnterpriseManagedArchieve />} />
           <Route path="/enterprise-managed-archive-sap" element={<EMAForSAP />} />
           <Route path="/global-case-management-ediscovery" element={<GlobalCaseManagement />} />
+          <Route path="/mtechnician" element={<MTechnician />} />
           {/* Add other routes here as needed */}
         </Routes>
       </main>

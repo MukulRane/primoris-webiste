@@ -1,0 +1,45 @@
+.sap-crm-why-choose-us-wrapper {
+    width: 100%;
+    background-color: #000; /* Black background */
+    padding: 50px 0;
+  }
+  
+  .sap-crm-why-choose-us {
+    text-align: left;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff; /* White text color */
+  }
+  
+  .sap-crm-why-choose-us-text {
+    width: 50%;
+    padding-right: 20px;
+  }
+  
+  .sap-crm-why-choose-us-heading {
+    font-family: 'Roboto', sans-serif;
+    font-size: 36px;
+    line-height: 55px;
+    margin-bottom: 20px;
+  }
+  
+  .sap-crm-why-choose-us-text p {
+    font-size: 16px;
+    line-height: 1.8;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .sap-crm-why-choose-us-image {
+    width: 50%;
+  }
+  
+  .sap-crm-why-choose-us-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  

@@ -1,0 +1,96 @@
+.sap-crm-section {
+    text-align: left;
+    padding: 50px 20px;
+    background-color: #fff;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .sap-crm-section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .sap-crm-accordion {
+    margin-top: 20px;
+    text-align: left;
+  }
+  
+  .sap-crm-accordion-item {
+    border: 1px solid #ddd;
+    overflow: hidden;
+  }
+  
+  .sap-crm-accordion-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    background-color: #f1f1f1;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .sap-crm-accordion-title.active {
+    background-color: #3a8bc8;
+    color: white;
+  }
+  
+  .sap-crm-arrow.sap-crm-down {
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+  }
+  
+  .sap-crm-arrow.sap-crm-right {
+    border: solid black;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+  }
+  
+  .sap-crm-right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+  
+  .sap-crm-down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+  
+  .sap-crm-accordion-content {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #333;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+  }
+  
+  .sap-crm-accordion-content.open {
+    max-height: 500px;
+    padding: 15px;
+  }
+  
+  .sap-crm-accordion-content p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .sap-crm-accordion-content ul {
+    list-style: disc;
+    padding-left: 20px;
+    margin-top: 10px;
+  }
+  
+  .sap-crm-accordion-content ul li {
+    margin-bottom: 5px;
+  }
+  

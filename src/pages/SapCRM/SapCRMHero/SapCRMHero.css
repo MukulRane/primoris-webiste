@@ -1,0 +1,64 @@
+.sap-crm-hero-section-erp {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-image: url('../../../images/sap-crm-hero.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    z-index: 0;
+  }
+  
+  .sap-crm-hero-text-erp {
+    z-index: 2;
+    max-width: 80%;
+    color: #fff;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .sap-crm-hero-text-erp h1 {
+    font-family: 'Dosis', sans-serif;
+    font-size: 48px;
+    line-height: 1;
+    margin-top: 0px;
+    margin-bottom: 40px;
+  }
+  
+  .sap-crm-hero-text-erp p {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    line-height: 1.8;
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+  
+  .sap-crm-contact-btn-erp {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: #0066b2;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .sap-crm-contact-btn-erp:hover {
+    background-color: #005099;
+  }
+  
+  .sap-crm-hero-image-tint {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+  

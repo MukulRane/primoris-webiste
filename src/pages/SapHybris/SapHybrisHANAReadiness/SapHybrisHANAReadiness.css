@@ -1,0 +1,72 @@
+.sap-hybris-data-science-offer-section {
+    text-align: left;
+    padding: 50px 20px;
+    background-color: #fff;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .sap-hybris-data-science-offer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  
+  .sap-hybris-offer-cards-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .sap-hybris-offer-card {
+    padding: 0px;
+  }
+  
+  .sap-hybris-offer-title {
+    background-color: #3a8bc8;
+    color: white;
+    padding: 12px 0px 12px 12px;
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .sap-hybris-offer-points {
+    text-align: left;
+    padding-left: 0px;
+  }
+  
+  .sap-hybris-offer-points ul {
+    list-style-type: disc;
+    padding-left: 15px;
+  }
+  
+  .sap-hybris-offer-points ul li {
+    font-size: 16px;
+    line-height: 30px;
+  }
+  
+  .sap-hybris-offer-image-container {
+    width: 45%;
+  }
+  
+  .sap-hybris-offer-image-container img {
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  @media (max-width: 1199px) {
+    .sap-hybris-data-science-offer-content {
+      flex-direction: column;
+    }
+  
+    .sap-hybris-offer-cards-container,
+    .sap-hybris-offer-image-container {
+      width: 100%;
+    }
+  }
+  

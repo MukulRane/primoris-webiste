@@ -20,6 +20,7 @@ import SapHana from './pages/SapHana/SapHana';
 import SapCloudAnalytics from './pages/SapCloudAnalytics/SapCloudAnalytics';
 import SapFiori from './pages/SapFiori/SapFiori';
 import SapCRM from './pages/SapCRM/SapCRM';
+import SapHybris from './pages/SapHybris/SapHybris';
 
 function App() {
   return (
@@ -46,6 +47,7 @@ function App() {
           <Route path="/sap-cloud-analytics" element={<SapCloudAnalytics />} />
           <Route path="/sap-fiori" element={<SapFiori />} />
           <Route path="/sap-crm" element={<SapCRM />} />
+          <Route path="/sap-hybris" element={<SapHybris />} />
           {/* Add other routes here as needed */}
         </Routes>
       </main>

@@ -1,0 +1,51 @@
+.case-management-wrapper {
+    width: 100%;
+    background-color: #fff;
+    padding: 50px 20px;
+  }
+  
+  .case-management {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  
+  .case-management-description {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .case-management-image-container {
+    text-align: center;
+  }
+  
+  .case-management-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .case-management-footer {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #333;
+    margin-top: 20px;
+    text-align: left;
+  }
+  
+  @media (max-width: 768px) {
+    .case-management {
+      padding: 20px;
+    }
+  
+    .case-management-description,
+    .case-management-footer {
+      font-size: 14px;
+    }
+  }
+  

@@ -26,6 +26,7 @@ import EMAForSAP from './pages/EMAForSAP/EMAForSAP';
 import GlobalCaseManagement from './pages/GlobalCaseManagement/GlobalCaseManagement';
 import MTechnician from './pages/MTechnician/MTechnician';
 import OrgChartViewer from './pages/OrgChartViewer/OrgChartViewer';
+import AssetManagement from './pages/AssetManagement/AssetManagement';
 
 function App() {
   return (
@@ -58,6 +59,7 @@ function App() {
           <Route path="/global-case-management-ediscovery" element={<GlobalCaseManagement />} />
           <Route path="/mtechnician" element={<MTechnician />} />
           <Route path="/orgchart-viewer" element={<OrgChartViewer />} />
+          <Route path="/asset-management" element={<AssetManagement />} />
           {/* Add other routes here as needed */}
         </Routes>
       </main>

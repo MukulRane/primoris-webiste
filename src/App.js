@@ -27,6 +27,7 @@ import GlobalCaseManagement from './pages/GlobalCaseManagement/GlobalCaseManagem
 import MTechnician from './pages/MTechnician/MTechnician';
 import OrgChartViewer from './pages/OrgChartViewer/OrgChartViewer';
 import AssetManagement from './pages/AssetManagement/AssetManagement';
+import News from './pages/News/News';
 
 function App() {
   return (
@@ -60,6 +61,7 @@ function App() {
           <Route path="/mtechnician" element={<MTechnician />} />
           <Route path="/orgchart-viewer" element={<OrgChartViewer />} />
           <Route path="/asset-management" element={<AssetManagement />} />
+          <Route path="/news" element={<News />} />
           {/* Add other routes here as needed */}
         </Routes>
       </main>

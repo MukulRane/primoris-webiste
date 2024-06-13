@@ -29,6 +29,7 @@ import OrgChartViewer from './pages/OrgChartViewer/OrgChartViewer';
 import AssetManagement from './pages/AssetManagement/AssetManagement';
 import News from './pages/News/News';
 import Careers from './pages/Careers/Careers';
+import Blogs from './pages/Blogs/Blogs';
 
 function App() {
   return (
@@ -64,6 +65,7 @@ function App() {
           <Route path="/asset-management" element={<AssetManagement />} />
           <Route path="/news" element={<News />} />
           <Route path="/careers" element={<Careers />} />
+          <Route path="/blogs" element={<Blogs />} />
           {/* Add other routes here as needed */}
         </Routes>
       </main>

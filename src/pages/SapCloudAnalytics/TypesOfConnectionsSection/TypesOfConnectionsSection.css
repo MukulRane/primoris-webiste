@@ -12,3 +12,12 @@
   gap: 20px;
   flex-wrap: wrap;
 }
+
+.types-of-connection-card ol {
+  padding-left: 20px; /* Adjust padding to align with the rest of the content */
+  margin: 0; /* Remove default margin */
+}
+
+.types-of-connection-card ol li {
+  margin-bottom: 10px; /* Add space between list items */
+}

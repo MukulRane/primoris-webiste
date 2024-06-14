@@ -1,59 +1,60 @@
 .sap-cloud-last-sap-analytics-cloud-section {
-    text-align: left;
-    padding: 50px 20px;
-    background-color: #fff;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
+  text-align: left;
+  padding: 50px 20px;
+  background-color: #fff;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.sap-cloud-last-content-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sap-cloud-last-text-content {
+  flex: 1 1 60%;
+  padding: 20px;
+  text-align: left;
+}
+
+.sap-cloud-last-text-content h3 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.sap-cloud-last-text-content p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: #333;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.sap-cloud-last-image-content {
+  flex: 1 1 40%;
+  padding: 20px;
+}
+
+.sap-cloud-last-image-content img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media (max-width: 768px) {
   .sap-cloud-last-content-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: flex-start; /* Align the whole container to the left */
+    align-items: flex-start; /* Align the items within the container to the left */
   }
-  
-  .sap-cloud-last-text-content {
-    flex: 1 1 60%;
-    padding: 20px;
-    text-align: left;
-  }
-  
-  .sap-cloud-last-text-content h3 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    color: #333;
-    margin-bottom: 5px;
-  }
-  
-  .sap-cloud-last-text-content p {
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    color: #333;
-    margin-top: 0px;
-    margin-bottom: 20px;
-    line-height: 1.5;
-  }
-  
+
+  .sap-cloud-last-text-content,
   .sap-cloud-last-image-content {
-    flex: 1 1 40%;
-    padding: 20px;
+    flex: 1 1 100%;
+    padding: 0;
   }
-  
-  .sap-cloud-last-image-content img {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
-  
-  @media (max-width: 768px) {
-    .sap-cloud-last-content-container {
-      flex-direction: column;
-    }
-  
-    .sap-cloud-last-text-content,
-    .sap-cloud-last-image-content {
-      flex: 1 1 100%;
-      padding: 0;
-    }
-  }
-  
+}

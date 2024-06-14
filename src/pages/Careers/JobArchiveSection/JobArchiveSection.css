@@ -79,6 +79,7 @@
 .job-archive-item-row {
   display: flex;
   align-items: flex-start;
+  flex-wrap: wrap;
 }
 
 .job-archive-item-image img {
@@ -93,6 +94,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .job-archive-item-header h3 {
@@ -100,6 +102,7 @@
   font-weight: 400;
   margin: 0;
   margin-right: 20px;
+  text-align: left;
 }
 
 .job-archive-item-header h3 a {
@@ -119,6 +122,7 @@
   font-size: 14px;
   display: flex;
   gap: 20px;
+  flex-wrap: wrap;
 }
 
 .job-archive-item-meta span {
@@ -171,4 +175,50 @@
 .job-archive-item-footer .read-more {
   background-color: #3297fa;
   color: #fff;
+}
+
+/* Media Query for screen widths between 767px and 992px */
+@media (max-width: 992px) and (min-width: 768px) {
+  .job-archive-item-meta {
+    margin-top: 10px;
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+/* Media Query for screen widths below 767px */
+@media (max-width: 767px) {
+  .job-archive-search .row {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .job-archive-search input,
+  .job-archive-search select,
+  .job-archive-search button {
+    flex: 1;
+  }
+
+  .job-archive-item-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .job-archive-item-image {
+    display: none;
+  }
+
+  .job-archive-item-meta {
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .job-archive-item-meta span:first-child {
+    margin-top: 10px;
+  }
+
+  .job-archive-item-meta span:last-child {
+    margin-right: 0; /* Remove the extra margin */
+  }
 }

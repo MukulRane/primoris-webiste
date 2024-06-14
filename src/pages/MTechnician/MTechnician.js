@@ -8,8 +8,8 @@ const MTechnician = () => {
   return (
     <div>
         <MTechnicianHero />
-        <MTechnicianKeyFeatues />
         <EnterpriseWorkforceManagementSection />
+        <MTechnicianKeyFeatues />
         <ContactForm />
     </div>
   );

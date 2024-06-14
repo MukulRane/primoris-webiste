@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from 'react';
+import React from 'react';
 import './Expertise.css';
 import SectionTitle from '../../../components/SectionTitle/SectionTitle';
 
@@ -25,44 +25,26 @@ const expertiseData = [
   },
   {
     title: 'Cybersecurity',
-    description: 'Protecting your valuable assets and data is crucial in today’s digital landscape. Our cybersecurity consultants work with you to identify vulnerabilities, develop robust security measures, implement effective controls, and provide ongoing monitoring and incident response services to safeguard your business against potential threats.',
+    description: 'Qrotecting your valuable assets and data is crucial in today’s digital landscape. Our cybersecurity consultants work with you to identify vulnerabilities, develop robust security measures, implement effective controls, and provide ongoing monitoring and incident response services to safeguard your business against potential threats.',
     icon: require('../../../images/tc-cyber.png'),
   },
 ];
 
 const Expertise = () => {
-  const [maxHeight, setMaxHeight] = useState(0);
-  const cardRefs = useRef([]);
-
-  const calculateMaxHeight = () => {
-    const heights = cardRefs.current.map(ref => ref.scrollHeight);
-    setMaxHeight(Math.max(...heights));
-  };
-
-  useEffect(() => {
-    calculateMaxHeight();
-    window.addEventListener('resize', calculateMaxHeight);
-    return () => {
-      window.removeEventListener('resize', calculateMaxHeight);
-    };
-  }, []);
-
   return (
-    <div className="expertise-wrapper">
-      <section className="expertise">
+    <div className="tech-expertise-wrapper">
+      <section className="tech-expertise">
         <div>
           <SectionTitle title="Our Expertise" />
         </div>
         <p>
           We offer a wide range of technical consulting services tailored to meet the unique needs of our clients. Our areas of expertise include:
         </p>
-        <div className="expertise-cards">
+        <div className="tech-expertise-cards">
           {expertiseData.map((item, index) => (
             <div
-              className="expertise-card"
+              className="tech-expertise-card"
               key={index}
-              ref={el => cardRefs.current[index] = el}
-              style={{ height: `${maxHeight}px` }}
             >
               <img src={item.icon} alt={item.title} />
               <h3>{item.title}</h3>

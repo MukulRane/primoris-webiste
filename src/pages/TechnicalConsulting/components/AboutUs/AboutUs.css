@@ -38,3 +38,18 @@
     line-height: 1.8;
   }
   
+  @media (max-width: 767px) {
+    .about-us {
+      flex-direction: column;
+    }
+  
+    .about-image {
+      order: 1;
+      width: 100%;
+    }
+  
+    .about-text {
+      order: 2;
+      width: 100%;
+    }
+  }

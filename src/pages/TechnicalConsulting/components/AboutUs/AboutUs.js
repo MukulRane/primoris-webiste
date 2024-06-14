@@ -10,7 +10,7 @@ const AboutUs = () => {
           <img src={require('../../../../images/technical-consulting-about-us.jpg')} alt="About Us" />
         </div>
         <div className="about-text">
-          <SectionTitle title="What We Offer" />
+          <SectionTitle title="About Us" />
           <p>At Primoris, we specialize in providing top-notch technical consulting services to businesses across various industries. With a team of highly skilled and experienced consultants, we are committed to helping our clients leverage technology to drive innovation, streamline processes, and achieve their business objectives.</p>
         </div>
       </section>

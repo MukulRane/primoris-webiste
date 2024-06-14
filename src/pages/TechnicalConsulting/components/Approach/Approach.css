@@ -2,6 +2,7 @@
   display: flex;
   justify-content: center;
   width: 100%;
+  padding: 10px;
 }
 .approach {
     background-color: #000;
@@ -21,7 +22,7 @@
   
   .approach p {
     font-family: 'Roboto', sans-serif;
-    font-size: 20px;
+    font-size: 16px;
     margin-bottom: 20px;
     margin-left: 40px;
     margin-right: 40px;

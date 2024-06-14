@@ -1,21 +1,22 @@
-.expertise-wrapper {
+.tech-expertise-wrapper {
   display: flex;
   justify-content: center;
   width: 100%;
+  padding: 10px;
 }
 
-.expertise {
+.tech-expertise {
   text-align: left;
   margin: 50px auto;
   max-width: 1200px;
 }
 
-.expertise h2 {
+.tech-expertise h2 {
   font-size: 2rem;
   margin-bottom: 0px;
 }
 
-.expertise p {
+.tech-expertise p {
   text-align: left;
   background-color: #fff;
   color: #333333;
@@ -25,37 +26,34 @@
   font-weight: 400;
 }
 
-.expertise-cards {
-  display: flex;
-  flex-wrap: wrap;
+.tech-expertise-cards {
+  display: grid;
   gap: 20px;
   justify-content: center;
   max-width: 1200px;
   margin: 0 auto;
 }
 
-.expertise-card {
+.tech-expertise-card {
   background-color: #fff;
   border-radius: 10px;
   border-color: #484545;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
   padding: 20px;
   box-sizing: border-box;
-  flex: 1 1 calc(33.333% - 20px); /* 3 cards per row with gap */
-  max-width: calc(33.333% - 20px);
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
 }
 
-.expertise-card img {
-  width: 80px; /* Increased size */
-  height: 80px; /* Increased size */
+.tech-expertise-card img {
+  width: 80px;
+  height: 80px;
   margin-bottom: 20px;
 }
 
-.expertise-card h3 {
+.tech-expertise-card h3 {
   margin-bottom: 10px;
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
@@ -64,7 +62,7 @@
   line-height: 1.4;
 }
 
-.expertise-card p {
+.tech-expertise-card p {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -73,9 +71,16 @@
   text-align: center;
 }
 
-@media (max-width: 1200px) {
-  .expertise-card {
-    flex: 1 1 calc(50% - 40px); /* 2 cards per row for smaller screens */
-    max-width: calc(50% - 40px);
+@media (min-width: 768px) {
+  .tech-expertise-cards {
+    grid-template-columns: repeat(3, 1fr); /* Three cards in a row */
+    grid-auto-rows: auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .tech-expertise-cards {
+    grid-template-columns: 1fr; /* Full-width cards in mobile view */
+    grid-auto-rows: auto;
   }
 }

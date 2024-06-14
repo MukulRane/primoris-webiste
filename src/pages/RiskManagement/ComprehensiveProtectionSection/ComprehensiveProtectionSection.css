@@ -1,89 +1,86 @@
 .comprehensive-protection-section {
-    text-align: center;
-    padding: 50px 20px;
-    background-color: #fff;
-    max-width: 1200px;
-    margin: 0 auto; 
-  }
-  
-  .comprehensive-protection-title {
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 20px;
-  }
-  
-  .comprehensive-protection-description {
-    font-size: 1rem;
-    color: #666;
-    margin-bottom: 40px;
-  }
-  
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #fff;
+  max-width: 1200px;
+  margin: 0 auto; 
+}
+
+.comprehensive-protection-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.comprehensive-protection-description {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.comprehensive-protection-cards-container {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(1, 1fr); /* Default to single column */
+}
+
+.protection-card {
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+  aspect-ratio: 1; /* Maintain square aspect ratio by default */
+}
+
+.protection-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.protection-card .tint {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+
+.protection-card h3 {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+  font-size: 1.5rem;
+  z-index: 2;
+  margin: 0;
+}
+
+.protection-card:hover img {
+  transform: scale(1.05);
+}
+
+.protection-card:hover .tint {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+@media (min-width: 768px) {
   .comprehensive-protection-cards-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 20px;
+    grid-template-columns: repeat(3, 1fr); /* Three columns for larger screens */
   }
-  
+}
+
+@media (max-width: 767px) {
   .protection-card {
-    position: relative;
-    flex: 1 1 calc(33.333% - 20px);
-    border-radius: 15px;
-    overflow: hidden;
-    height: 0;
-    padding-bottom: calc(33.333% - 20px);
+    aspect-ratio: auto;
+    height: 400px; /* Fixed height for mobile view */
   }
-  
-  .protection-card img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.3s ease;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-  
-  .protection-card .tint {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: background-color 0.3s ease;
-  }
-  
-  .protection-card h3 {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    color: white;
-    font-size: 1.5rem;
-    z-index: 2;
-    margin: 0;
-  }
-  
-  .protection-card:hover img {
-    transform: scale(1.05);
-  }
-  
-  .protection-card:hover .tint {
-    background-color: rgba(0, 0, 0, 0.3);
-  }
-  
-  @media (min-width: 1200px) {
-    .comprehensive-protection-section {
-      max-width: 1200px;
-    }
-  
-    .protection-card {
-      flex: 1 1 calc(33.333% - 20px);
-      height: 0;
-      padding-bottom: calc(33.333% - 20px);
-    }
-  }
-  
+}

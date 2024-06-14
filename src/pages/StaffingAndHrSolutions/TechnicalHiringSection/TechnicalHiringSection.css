@@ -33,3 +33,17 @@
     border-radius: 10px;
   }
   
+  @media (max-width: 767px) {
+    .technical-cards-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .technical-cards-container {
+      width: 100%;
+    }
+
+    .technical-image-container {
+      display: none;
+    }
+  }

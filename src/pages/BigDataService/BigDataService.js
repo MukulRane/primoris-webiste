@@ -10,7 +10,6 @@ const BigDataService = () => {
   return (
     <div>
         <BigDataHero />
-        <ContactForm />
         <BigDataSolutionsSection />
         <JoinUsSection />
         <IndustryExpertiseSection />

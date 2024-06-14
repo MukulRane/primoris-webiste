@@ -1,38 +1,48 @@
 .business-function-hiring-section {
-    text-align: left;
-    padding: 50px 20px;
-    background-color: #fff;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
+  text-align: left;
+  padding: 50px 20px;
+  background-color: #fff;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.content-container {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(2, 1fr); /* Two columns for larger screens */
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.item {
+  display: flex;
+  align-items: flex-start;
+}
+
+.bullet-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+.item p {
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+@media (max-width: 767px) {
   .content-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    grid-template-columns: 1fr; /* Single column for mobile view */
   }
-  
+
   .column {
-    width: 48%;
+    width: 100%; /* Full width for mobile view */
   }
-  
-  .item {
-    display: flex;
-    align-items: flex-start;
-    margin-bottom: 20px;
-  }
-  
-  .bullet-icon {
-    width: 24px;
-    height: 24px;
-    margin-right: 10px;
-  }
-  
-  .item p {
-    font-family: 'Roboto', sans-serif;
-    color: #333;
-    font-size: 16px;
-    line-height: 1.5;
-    margin: 0;
-  }
-  
+}

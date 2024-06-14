@@ -1,40 +1,46 @@
 .search-methodology-section {
-    text-align: center;
-    padding: 50px 20px;
-    background-color: #fff;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #fff;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.search-methodology-content-container {
+  display: grid;
+  gap: 20px; /* Add some gap between the items */
+  grid-template-columns: 1fr; /* Default to single column */
+  margin-top: 20px;
+}
+
+.search-methodology-methodology-item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px 20px; /* Optional: padding for items */
+  border-radius: 5px; /* Optional: rounded corners for items */
+}
+
+.search-methodology-methodology-item p {
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  text-align: left;
+  font-size: 18px;
+  line-height: 1.5;
+  margin-left: 10px;
+  font-weight: 500;
+}
+
+.search-methodology-icon {
+  font-size: 24px;
+  color: #3A8BC8;
+  fill: #3A8BC8;
+  border-color: #3A8BC8;
+  font-weight: 900;
+}
+
+@media (min-width: 768px) {
   .search-methodology-content-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 0px;
-    margin-top: 20px;
+    grid-template-columns: repeat(3, 1fr); /* Three columns for larger screens */
   }
-  
-  .search-methodology-methodology-item {
-    display: flex;
-    align-items: center;
-    width: 30%;
-    min-width: 250px;
-  }
-  
-  .search-methodology-methodology-item p {
-    font-family: 'Roboto', sans-serif;
-    color: #333;
-    font-size: 18px;
-    line-height: 1.5;
-    margin-left: 10px;
-    font-weight: 500;
-  }
-  
-  .search-methodology-icon {
-    font-size: 24px;
-    color: #3A8BC8;
-    fill: #3A8BC8;
-    border-color: #3A8BC8;
-    font-weight: 900;
-  }
-  
+}

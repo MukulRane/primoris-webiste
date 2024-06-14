@@ -1,63 +1,61 @@
 .data-science-services-section {
-    text-align: center;
-    padding: 50px 20px;
-    background-color: #fff;
-    max-width: 1200px;
-    margin: 0 auto; /* Center the section */
-  }
-  
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #fff;
+  max-width: 1200px;
+  margin: 0 auto; /* Center the section */
+}
+
+.data-science-services-cards-container {
+  display: grid;
+  gap: 20px; /* Space between cards */
+  grid-template-columns: 1fr; /* Single column by default */
+}
+
+.data-science-services-card-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: stretch; /* Ensure all cards stretch to the same height */
+}
+
+.data-science-service-card {
+  background: #fff;
+  border-top: 6px solid #3a8bc8;
+  border-radius: 10px;
+  box-shadow: 0 0px 10px 0px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  box-sizing: border-box;
+  transition: background-color 0.3s ease;
+  margin: 0px;
+}
+
+.data-science-service-card:hover {
+  background-color: #f7f7f7;
+}
+
+.data-science-service-card h3 {
+  text-align: center;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.data-science-service-card p {
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  color: #6F6F6F;
+  line-height: 1.8;
+}
+
+@media (min-width: 768px) {
   .data-science-services-cards-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 20px; /* Space between cards */
+    grid-template-columns: repeat(3, 1fr); /* Three columns for larger screens */
+    align-items: stretch; /* Ensure all cards stretch to the same height */
   }
-  
-  .data-science-services-card-wrapper {
-    flex: 1 1 calc(33.333% - 20px); /* Three cards per row with space */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .data-science-service-card {
-    background: #fff;
-    border-top: 6px solid #3a8bc8;
-    border-radius: 10px;
-    box-shadow: 0 0px 10px 0px rgba(0, 0, 0, 0.2);
-    padding: 10px;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    box-sizing: border-box;
-    transition: background-color 0.3s ease;
-    margin: 0px;
-  }
-  
-  .data-science-service-card:hover {
-    background-color: #f7f7f7;
-  }
-  
-  .data-science-service-card h3 {
-    text-align: center;
-    font-size: 20px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 10px;
-  }
-  
-  .data-science-service-card p {
-    font-size: 16px;
-    font-family: 'Roboto', sans-serif;
-    color: #6F6F6F;
-    line-height: 1.8;
-  }
-  
-  .data-science-placeholder-card {
-    visibility: hidden;
-    border: none;
-  }
-  
+}

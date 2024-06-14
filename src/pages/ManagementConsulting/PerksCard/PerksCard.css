@@ -1,32 +1,38 @@
 .perks-card {
-    border: 1px solid #3A8BC8;
-    border-radius: 8px;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 45%; /* Set width to 45% for two cards in a row */
-    margin-bottom: 20px; /* Add space between rows */
-    color: #3A8BC8;
-    border-top: 6px solid #3A8BC8;
-  }
+  border: 1px solid #3A8BC8;
+  border-radius: 8px;
+  padding: 60px 20px 20px 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 48%; /* Set width to 45% for two cards in a row */
+  margin-bottom: 20px; /* Add space between rows */
+  color: #3A8BC8;
+  border-top: 6px solid #3A8BC8;
+}
 
-  .perks-card:hover {
-    background-color: #f7f7f7;
+.perks-card:hover {
+  background-color: #f7f7f7;
+}
+
+.perks-card h3 {
+  color: #333;
+  font-family: 'Roboto', sans-serif;
+  font-size: 22px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.perks-card p {
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  font-size: 16px;
+  line-height: 1.8;
+  text-align: left;
+}
+
+/* Mobile view */
+@media (max-width: 767px) {
+  .perks-card {
+    width: 100%; /* Full width for mobile view */
   }
-  
-  .perks-card h3 {
-    color: #333;
-    font-family: 'Roboto', sans-serif;
-    font-size: 22px;
-    margin-bottom: 10px;
-    font-weight: 600;
-  }
-  
-  .perks-card p {
-    font-family: 'Roboto', sans-serif;
-    color: #333;
-    font-size: 16px;
-    line-height: 1.5;
-    text-align: left;
-  }
-  
+}

@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './ServicesSection.css';
 import AccordionItem from '../AccordionItem';
 import SectionTitle from '../../../components/SectionTitle/SectionTitle';
-import { ReactComponent as SalesforceSVG } from '../../../images/management-consulting-services-background.svg'; // Import the SVG as a React component
+import { ReactComponent as SalesforceSVG } from '../../../images/management-consulting-services-background.svg';
 
 const accordionData = [
   {
@@ -24,6 +24,12 @@ const accordionData = [
 ];
 
 const ServicesSection = () => {
+  const [activeIndex, setActiveIndex] = useState(0); // Set the first accordion to be open by default
+
+  const handleToggle = (index) => {
+    setActiveIndex(index === activeIndex ? -1 : index);
+  };
+
   return (
     <div className="services-section">
       <div className="accordion-container">
@@ -31,7 +37,14 @@ const ServicesSection = () => {
           <SectionTitle title="Our Services" dividerColor="#000" dividerWidth="70%" dividerAlign="center" />
         </div>
         {accordionData.map((item, index) => (
-          <AccordionItem key={index} title={item.title} content={item.content} />
+          <AccordionItem
+            key={index}
+            index={index}
+            title={item.title}
+            content={item.content}
+            isActive={index === activeIndex}
+            onToggle={handleToggle}
+          />
         ))}
       </div>
       <div className="image-container">

@@ -19,19 +19,16 @@
 }
 
 .features-of-sap-cards-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
   gap: 20px;
+  grid-template-columns: repeat(1, 1fr); /* Default to single column */
 }
 
 .feature-card {
   position: relative;
-  flex: 1 1 calc(33.333% - 20px);
   border-radius: 15px;
   overflow: hidden;
-  height: 0;
-  padding-bottom: calc(33.333% - 20px);
+  aspect-ratio: 1;
 }
 
 .feature-card img {
@@ -75,14 +72,15 @@
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-@media (min-width: 1200px) {
-  .features-of-sap-section {
-    max-width: 1200px;
+@media (min-width: 768px) {
+  .features-of-sap-cards-container {
+    grid-template-columns: repeat(3, 1fr); /* Three columns for larger screens */
   }
+}
 
+@media (max-width: 767px) {
   .feature-card {
-    flex: 1 1 calc(33.333% - 20px);
-    height: 0;
-    padding-bottom: calc(33.333% - 20px);
+    aspect-ratio: auto;
+    height: 400px; /* Adjust this value to your desired height */
   }
 }

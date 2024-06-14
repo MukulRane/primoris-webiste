@@ -5,7 +5,6 @@
     padding: 20px;
     text-align: left;
     max-width: 200px;
-    margin: 10px;
   }
   
   .text-card h3 {
@@ -38,3 +37,8 @@
     line-height: 1.6;
   }
   
+  @media (max-width: 767px) {
+    .text-card {
+      max-width: 100%;
+    }
+  }

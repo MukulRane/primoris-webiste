@@ -1,55 +1,74 @@
 .business-wrapper {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 10px;
+}
+
+.business-section {
+  text-align: left;
+  margin: 50px auto;
+  max-width: 1200px;
+}
+
+.business-description {
+  text-align: left;
+  background-color: #fff;
+  color: #333333;
+  padding-bottom: 40px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 20px;
+  line-height: 1.8;
+}
+
+.business-description .highlight {
+  color: #3A8BC8;
+  font-weight: 500;
+}
+
+.business-content {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.business-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 25%; /* Each column of cards takes up 25% of the space */
+}
+
+.erp-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%; /* The image container takes up 50% of the space */
+}
+
+.erp-image {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 767px) {
+  .business-content {
+    flex-direction: column; /* Change direction to column for mobile view */
+  }
+
+  .business-cards {
+    width: 100%; /* Full width for each card column */
+  }
+
+  .erp-image-container {
+    width: 100%; /* Full width for the image container */
+    margin: 20px 0; /* Add some margin for spacing */
+  }
+
+  .text-card {
     width: 100%;
   }
-  
-  .business-section {
-    text-align: left;
-    margin: 50px auto;
-    max-width: 1200px;
-  }
-  
-  .business-description {
-    text-align: center;
-    background-color: #fff;
-    color: #333333;
-    padding-bottom: 40px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    margin-top: 20px;
-    line-height: 1.8;
-  }
-  
-  .business-description .highlight {
-    color: #3A8BC8;
-    font-weight: 500;
-  }
-  
-  .business-content {
-    display: flex;
-    justify-content: space-between;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  .business-cards {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    width: 25%; /* Each column of cards takes up 25% of the space */
-  }
-  
-  .erp-image-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50%; /* The image container takes up 50% of the space */
-  }
-  
-  .erp-image {
-    max-width: 100%;
-    height: auto;
-  }
-  
+}

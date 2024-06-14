@@ -2,7 +2,7 @@
     max-width: 800px;
     margin: 0 auto;
     padding: 50px 20px;
-    text-align: center;
+    text-align: left;
   }
   
   .faq-items {
@@ -11,7 +11,7 @@
   
   .faq-item {
     border-bottom: 1px solid #ddd;
-    padding: 10px;
+    padding: 16px 16px 24px;
   }
   
   .faq-question {
@@ -20,9 +20,9 @@
     align-items: center;
     cursor: pointer;
     font-family: 'Roboto', sans-serif;
-    font-size: 15px;
+    font-size: 20px;
     color: #333333;
-    font-weight: 500;
+    font-weight: 400;
   }
   
   .faq-question h3 {

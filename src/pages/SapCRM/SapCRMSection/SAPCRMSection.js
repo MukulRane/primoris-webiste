@@ -8,7 +8,7 @@ const crmData = [
     content: `
       <p>All sales-related data is collected by SAP CRM and is available at any moment with the press of a mouse. You may provide individualised customer support and anticipate and manage your pipeline with the perspective of current marketing campaigns, order status, and any complaints. All parties involved have access to centrally located important consumer knowledge.</p>
       <br>
-      <p><strong>Processes for Supporting Sales:</strong></p>
+      <p><strong><b>Processes for Supporting Sales:</b></strong></p>
       <ul>
         <li>Possibility management</li>
         <li>Strategy for sales and managing territories</li>

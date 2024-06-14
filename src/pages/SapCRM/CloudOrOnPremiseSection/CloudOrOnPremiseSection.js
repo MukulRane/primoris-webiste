@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from 'react';
+import React from 'react';
 import './CloudOrOnPremiseSection.css';
 import SectionTitle from '../../../components/SectionTitle/SectionTitle';
 
@@ -21,27 +21,6 @@ const cloudOrOnPremiseData = [
 ];
 
 const CloudOrOnPremiseSection = () => {
-  const [maxHeight, setMaxHeight] = useState(0);
-  const cardRefs = useRef([]);
-
-  const calculateMaxHeight = () => {
-    const heights = cardRefs.current.map(ref => ref.scrollHeight);
-    setMaxHeight(Math.max(...heights));
-  };
-
-  useEffect(() => {
-    calculateMaxHeight();
-    window.addEventListener('resize', calculateMaxHeight);
-    return () => {
-      window.removeEventListener('resize', calculateMaxHeight);
-    };
-  }, []);
-
-  useEffect(() => {
-    // Adjust the height once the component mounts
-    calculateMaxHeight();
-  }, []);
-
   return (
     <div className="cloud-or-on-premise-wrapper">
       <section className="cloud-or-on-premise">
@@ -53,12 +32,7 @@ const CloudOrOnPremiseSection = () => {
         </p>
         <div className="cloud-or-on-premise-cards">
           {cloudOrOnPremiseData.map((item, index) => (
-            <div
-              className="cloud-or-on-premise-card"
-              key={index}
-              ref={el => cardRefs.current[index] = el}
-              style={{ minHeight: `${maxHeight}px` }}
-            >
+            <div className="cloud-or-on-premise-card" key={index}>
               <img src={item.icon} alt={item.title} />
               <h3>{item.title}</h3>
               <p>{item.description}</p>

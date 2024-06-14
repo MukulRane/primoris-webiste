@@ -1,39 +1,36 @@
 .our-services-section {
-    text-align: center;
-    padding-top: 40px;
-    padding-bottom: 15px;
-    padding-left: 0px;
-    padding-right: 0px;
-    background-color: #fff; /* Background color for distinction */
-    max-width: 1200px;
-    margin: 0 auto; /* Center the section */
-    text-align: left;
-  }
-  
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #fff; /* Background color for distinction */
+  max-width: 1200px;
+  margin: 0 auto; /* Center the section */
+  text-align: left;
+}
+
+.services-cards-container {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr; /* Default to single column */
+}
+
+@media (min-width: 768px) {
   .services-cards-container {
-    display: flex;
-    justify-content: space-between; /* Ensure equal space between cards */
-    flex-wrap: wrap; /* Ensure cards wrap to the next line if needed */
+    grid-template-columns: repeat(3, 1fr); /* Three columns for larger screens */
   }
-  
-  @media (max-width: 1200px) {
-    .service-card {
-      flex: 1 1 calc(33.333% - 20px); /* Adjust width for responsiveness */
-      margin: 10px;
-    }
-  }
-  
-  @media (max-width: 768px) {
-    .service-card {
-      flex: 1 1 calc(50% - 20px); /* Adjust width for smaller screens */
-      margin: 10px;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .service-card {
-      flex: 1 1 100%; /* Full width for very small screens */
-      margin: 10px;
-    }
-  }
-  
+}
+
+.service-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+}

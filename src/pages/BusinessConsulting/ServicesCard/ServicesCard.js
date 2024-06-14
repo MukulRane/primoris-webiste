@@ -7,7 +7,7 @@ const ServicesCard = ({ title }) => {
   return (
     <div className="simple-card">
       <div className="simple-card-left">
-        <FontAwesomeIcon icon={faCheckDouble} className="icon" />
+        <FontAwesomeIcon icon={faCheckDouble} className="service-card-icon" />
       </div>
       <div className="simple-card-right">
         <p>{title}</p>

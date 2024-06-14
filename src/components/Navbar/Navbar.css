@@ -1,7 +1,7 @@
 @import url('../../fonts/fonts.css');
 
 .navbar-container {
-  width: 100%;
+  width: auto;
   display: flex;
   justify-content: center;
   top: 0;
@@ -35,7 +35,7 @@
 }
 
 .logo:hover {
-  opacity: 0.7; /* Reduce the alpha gradient */
+  opacity: 0.7;
 }
 
 .navbar nav ul {
@@ -45,7 +45,7 @@
 }
 
 .about-us-link {
-  margin-right: 15px; /* Add space after ABOUT US link */
+  margin-right: 15px;
 }
 
 .navbar nav ul li {
@@ -64,5 +64,5 @@
 
 .navbar nav ul li a:hover,
 .navbar nav ul li .dropdown-title:hover {
-  color: #6EC1E4; /* Change the color on hover */
+  color: #6EC1E4;
 }

@@ -1,7 +1,7 @@
 .gradient-button {
-    display: flex; /* Use flexbox for centering */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: #ffffff;
     font-size: 20px;
     transition: 0.5s;
@@ -15,10 +15,15 @@
     font-size: 20px;
     font-weight: 500;
     width: 23%;
-    box-sizing: border-box; /* Ensure padding is included in the width calculation */
+    box-sizing: border-box;
   }
   
   .gradient-button:hover {
-    background-position: right center; /* Shift the background gradient on hover */
+    background-position: right center;
   }
   
+  @media (max-width: 767px) {
+    .gradient-button {
+      width: 100%;
+    }
+  }

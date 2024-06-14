@@ -3,7 +3,7 @@ import './CustomButton.css';
 
 const CustomButton = ({ text }) => {
   return (
-    <button className="custom-button">
+    <button className="custom-button-connect">
       {text}
     </button>
   );

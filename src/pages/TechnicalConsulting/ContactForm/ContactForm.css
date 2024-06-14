@@ -4,12 +4,18 @@
   }
   
   .contact-form h2 {
-    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 48px;
+    color: #333;
     margin-bottom: 20px;
   }
   
   .contact-form p {
-    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #25262D;
+    line-height: 1.8;
     margin-bottom: 20px;
   }
   
@@ -27,7 +33,9 @@
   }
   
   .form-group label {
-    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #000;
     margin-bottom: 5px;
   }
   
@@ -43,4 +51,25 @@
     padding: 0 40px;
     display: flex;
     flex-direction: column;
+  }
+
+  @media (max-width: 767px) {
+    .work-with-us {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .left-column,
+    .contact-right-column {
+      width: 100%;
+      padding: 0;
+    }
+  
+    .left-column {
+      margin-bottom: 20px;
+    }
+
+    .left-column h2 {
+      font-size: 28px;
+    }
   }

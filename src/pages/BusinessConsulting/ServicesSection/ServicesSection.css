@@ -1,44 +1,60 @@
 .business-services-section-wrapper {
-    width: 100%;
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .business-services-section {
-    text-align: left;
-    padding: 50px 20px;
-    max-width: 1200px;
-  }
-  
-  .business-services-section-p {
-    font-size: 16px;
-    color: #000;
-    margin-bottom: 40px;
-    font-family: 'Roboto', sans-serif;
-  }
+  text-align: left;
+  padding: 50px 20px;
+  max-width: 1200px;
+  box-sizing: border-box; /* Ensure padding is included in the element's total width and height */
+}
 
-  .business-services-cards-container-approach {
-    text-align: left;
-    margin-top: 80px;
-  }
-  
-  .business-services-cards-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: start;
-    gap: 10px; /* Gap between columns */
-  }
+.business-services-section-p {
+  font-size: 16px;
+  color: #000;
+  margin-bottom: 40px;
+  font-family: 'Roboto', sans-serif;
+}
 
-  .business-services-cards-container-approach-p {
-    font-size: 16px;
-    color: #000;
-    font-family: 'Roboto', sans-serif;
-    margin-bottom: 0px;
-  }
-  
+.business-services-cards-container-approach {
+  text-align: left;
+  margin-top: 80px;
+}
+
+.business-services-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  gap: 10px;
+}
+
+.business-services-cards-container-approach-p {
+  font-size: 16px;
+  color: #000;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 0px;
+}
+
+.business-services-card-wrapper {
+  flex: 1 1 32%;
+  max-width: 32%;
+  box-sizing: border-box;
+}
+
+/* Mobile view */
+@media (max-width: 767px) {
   .business-services-card-wrapper {
-    flex: 1 1 32%;
-    max-width: 32%;
-    box-sizing: border-box;
+    flex: 1 1 100%;
+    max-width: 100%;
   }
   
+  .business-services-section {
+    padding: 20px;
+  }
+
+  .business-services-section-p,
+  .business-services-cards-container-approach-p {
+    font-size: 14px;
+  }
+}

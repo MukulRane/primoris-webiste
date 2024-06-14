@@ -2,13 +2,13 @@
     text-align: left;
     max-width: 1200px;
     margin: 0 auto;
+    padding: 50px 20px;
 }
 
 .masset-user-experience-section {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 50px 20px;
     background-color: #fff;
     padding-top: 0px;
   }

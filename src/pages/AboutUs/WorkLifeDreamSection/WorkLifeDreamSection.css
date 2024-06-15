@@ -1,0 +1,82 @@
+.work-life-dream-wrapper {
+    width: 100%;
+    padding: 50px 20px;
+    background-color: #fff;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .work-life-dream-wrapper h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .work-life-dream-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  .work-life-dream-item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+    position: relative;
+    border-radius: 5px;
+  }
+  
+  .work-life-dream-icon {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+  }
+  
+  .work-life-dream-text {
+    font-size: 18px;
+    text-align: left;
+    line-height: 1.8;
+    flex: 1;
+  }
+  
+  .work-life-dream-divider {
+    position: absolute;
+    right: -10px;
+    height: 100%;
+    width: 1px;
+    background-color: #4b4444;
+  }
+  
+  .hide-divider {
+    display: none;
+  }
+  
+  @media (max-width: 767px) {
+    .work-life-dream-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .work-life-dream-divider {
+      display: none;
+    }
+  
+    .work-life-dream-item {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+  
+    .work-life-dream-icon {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  
+    .work-life-dream-text {
+      text-align: center;
+    }
+  }
+  

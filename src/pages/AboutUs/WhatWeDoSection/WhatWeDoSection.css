@@ -1,0 +1,46 @@
+.what-we-do-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 50px 20px;
+    background-color: #fff;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+  
+  .what-we-do-title {
+    flex: 1;
+    font-family: 'Roboto', sans-serif;
+    font-size: 36px;
+    color: #2F313C;
+    font-weight: 600;
+    text-align: left;
+  }
+  
+  .what-we-do-description {
+    flex: 1;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #2F313C;
+    padding-left: 20px;
+    text-align: left;
+  }
+  
+  @media (max-width: 767px) {
+    .what-we-do-section {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .what-we-do-description {
+      padding-left: 0;
+    }
+
+    .what-we-do-title {
+      margin-bottom: 20px;
+      font-size: 28px;
+    }
+  }
+  

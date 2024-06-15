@@ -1,0 +1,70 @@
+.about-us-mission-wrapper {
+    width: 100%;
+    background-image: url('../../../images/about-us-mission.png');
+    background-size: cover;
+    background-position: center;
+    padding: 50px 20px;
+    box-sizing: border-box;
+    position: relative;
+  }
+  
+  .about-us-mission-wrapper::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Tint color */
+    z-index: 1;
+  }
+  
+  .about-us-mission-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    z-index: 2;
+    position: relative;
+  }
+  
+  .about-us-mission-text {
+    color: #fff;
+    text-align: left;
+    padding: 100px 0px;
+  }
+  
+  .about-us-mission-text h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .about-us-mission-text p {
+    font-size: 18px;
+    line-height: 1.8;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .about-us-mission-blank-box {
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* Mobile view */
+  @media (max-width: 767px) {
+    .about-us-mission-container {
+      grid-template-columns: 1fr;
+      text-align: center;
+    }
+  
+    .about-us-mission-text h2 {
+      font-size: 28px;
+    }
+  
+    .about-us-mission-text p {
+      font-size: 16px;
+    }
+  }
+  

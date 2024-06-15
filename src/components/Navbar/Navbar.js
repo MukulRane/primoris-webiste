@@ -56,7 +56,7 @@ const Navbar = () => {
         </div>
         <nav>
           <ul>
-            <li><Link to="/" className="about-us-link">ABOUT US</Link></li>
+            <li><Link to="/about-us" className="about-us-link">ABOUT US</Link></li>
             <li>
               <Dropdown title="SERVICES" items={services} />
             </li>

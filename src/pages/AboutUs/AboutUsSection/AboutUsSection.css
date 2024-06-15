@@ -1,4 +1,4 @@
-.news-section-wrapper {
+.about-us-section-wrapper {
     width: 100%;
     background-color: #fff;
     padding: 50px 20px;
@@ -7,7 +7,7 @@
     font-family: 'Roboto', sans-serif;
   }
   
-  .news-section {
+  .about-us-section {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -16,28 +16,28 @@
     padding: 15px;
   }
   
-  .news-text {
+  .about-us-text {
     flex: 1;
     padding-left: 80px;
     text-align: left;
   }
   
-  .news-text h2 {
+  .about-us-text h2 {
     font-size: 72px;
     color: #333;
     font-weight: 600;
     margin-bottom: 40px;
   }
   
-  .news-text p {
+  .about-us-text p {
     color: #25262D;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 400;
     line-height: 1.6;
     margin-bottom: 20px;
   }
   
-  .news-image-wrapper {
+  .about-us-image-wrapper {
     flex: 1;
     display: flex;
     justify-content: center;
@@ -45,26 +45,32 @@
     position: relative;
   }
   
-  .news-image {
+  .about-us-image {
     width: 100%;
     max-width: 400px;
   }
   
   @media (max-width: 768px) {
-    .news-section {
+    .about-us-section {
       flex-direction: column;
+      padding: 0;
     }
   
-    .news-text {
+    .about-us-text {
       padding-right: 0;
+      padding-left: 0;
     }
   
-    .news-image-wrapper {
+    .about-us-image-wrapper {
       margin-top: 20px;
     }
 
-    .news-image {
+    .about-us-image {
       display: none;
+    }
+
+    .about-us-text h2 {
+      font-size: 36px;
     }
   }
   

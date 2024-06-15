@@ -1,6 +1,5 @@
 import React from 'react';
 import './AboutUsVisionSection.css';
-import SectionTitle from '../../ManagementConsulting/SectionTitle/SectionTitle';
 
 const AboutUsVisionSection = () => {
   const visionData = [

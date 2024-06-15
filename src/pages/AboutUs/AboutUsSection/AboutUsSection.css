@@ -1,76 +1,87 @@
 .about-us-section-wrapper {
-    width: 100%;
-    background-color: #fff;
-    padding: 50px 20px;
-    display: flex;
-    justify-content: center;
-    font-family: 'Roboto', sans-serif;
+  width: 100%;
+  background-color: #fff;
+  padding: 50px 20px;
+  display: flex;
+  justify-content: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.about-us-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+.about-us-text {
+  flex: 1;
+  padding-left: 80px;
+  text-align: left;
+}
+
+.about-us-text h2 {
+  font-size: 72px;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+.about-us-text p {
+  color: #25262D;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.about-us-image-wrapper {
+  flex: 1.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.about-us-image {
+  width: 70%;
+  animation: floating 2000ms ease infinite;
+}
+
+@keyframes floating {
+  0% {
+    transform: translate3d(0px, -5px, 0px);
   }
-  
+  50% {
+    transform: translate3d(8px, 8px, 0px);
+  }
+  100% {
+    transform: translate3d(0px, -5px, 0px);
+  }
+}
+
+@media (max-width: 768px) {
   .about-us-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    margin: 0 auto;
-    padding: 15px;
+    flex-direction: column;
+    padding: 0;
   }
-  
+
   .about-us-text {
-    flex: 1;
-    padding-left: 80px;
-    text-align: left;
+    padding-right: 0;
+    padding-left: 0;
   }
-  
-  .about-us-text h2 {
-    font-size: 72px;
-    color: #333;
-    font-weight: 600;
-    margin-bottom: 40px;
-  }
-  
-  .about-us-text p {
-    color: #25262D;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 1.6;
-    margin-bottom: 20px;
-  }
-  
+
   .about-us-image-wrapper {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+    margin-top: 20px;
   }
-  
+
   .about-us-image {
-    width: 100%;
-    max-width: 400px;
+    display: none;
   }
-  
-  @media (max-width: 768px) {
-    .about-us-section {
-      flex-direction: column;
-      padding: 0;
-    }
-  
-    .about-us-text {
-      padding-right: 0;
-      padding-left: 0;
-    }
-  
-    .about-us-image-wrapper {
-      margin-top: 20px;
-    }
 
-    .about-us-image {
-      display: none;
-    }
-
-    .about-us-text h2 {
-      font-size: 36px;
-    }
+  .about-us-text h2 {
+    font-size: 36px;
   }
-  
+}

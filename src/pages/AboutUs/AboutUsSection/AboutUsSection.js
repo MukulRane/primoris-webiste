@@ -1,6 +1,6 @@
 import React from 'react';
 import './AboutUsSection.css';
-import newsImage from '../../../images/news-hero.png';
+import newsImage from '../../../images/about-us-hero-1.png';
 
 const AboutUsSection = () => {
   return (

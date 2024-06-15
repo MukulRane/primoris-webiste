@@ -4,12 +4,11 @@ import logo1 from '../../../images/supply-chain-hoag.png';
 import logo2 from '../../../images/supply-chain-mauser.png';
 import logo3 from '../../../images/supply-chain-capgemini.png';
 import logo4 from '../../../images/supply-chain-lifeinsurance.png';
-import logo5 from '../../../images/supply-chain-bosch.png'; // Replace with actual image paths
+import logo5 from '../../../images/supply-chain-bosch.png';
 import logo6 from '../../../images/supply-chain-techmahindra.png';
 import logo7 from '../../../images/supply-chain-mauser.png';
 import logo8 from '../../../images/supply-chain-truspec.png';
 import logo9 from '../../../images/supply-chain-sony.png';
-
 import logo10 from '../../../images/supply-chain-brima.png';
 import logo11 from '../../../images/supply-chain-happiest.png';
 import logo12 from '../../../images/supply-chain-icreon.png';
@@ -47,7 +46,7 @@ const ClientsSection = () => {
       <h2>Our Clients</h2>
       <div className="clients-marquee">
         <div className="clients-track">
-          {clients.map((client, index) => (
+          {clients.concat(clients).map((client, index) => (
             <div className="client-logo" key={index}>
               <img src={client.src} alt={client.alt} />
             </div>

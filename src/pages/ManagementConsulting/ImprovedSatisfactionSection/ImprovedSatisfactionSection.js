@@ -13,7 +13,7 @@ const ImprovedSatisfactionSection = () => {
         </div>
         <div className="images-content">
           <img src={require('../../../images/management-consulting-improved-satisfaction-2.jpg')} alt="Consulting" className="improved-image-bottom" />
-          {/* <img src={require('../../../images/management-consulting-improved-satisfaction-1.jpg')} alt="Consulting" className="improved-image-top" /> */}
+          <img src={require('../../../images/management-consulting-improved-satisfaction-1.jpg')} alt="Consulting" className="improved-image-top" />
         </div>
       </div>
     </section>

@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import './ServicesSection.css';
 import AccordionItem from '../AccordionItem';
 import SectionTitle from '../../../components/SectionTitle/SectionTitle';
-import { ReactComponent as SalesforceSVG } from '../../../images/management-consulting-services-background.svg';
+import image1 from '../../../images/management-our-service-background.png';
+import image2 from '../../../images/management-our-service.png';
 
 const accordionData = [
   {
@@ -48,14 +49,8 @@ const ServicesSection = () => {
         ))}
       </div>
       <div className="image-container">
-        <svg width="596" height="451" viewBox="0 0 596 451">
-          <defs>
-            <clipPath id="clipping-path" clipPathUnits="objectBoundingBox">
-              <SalesforceSVG />
-            </clipPath>
-          </defs>
-        </svg>
-        <img src="https://primorissystems.com/wp-content/uploads/2023/04/pexels-fauxels-3183165-scaled-p9dqzhufk80v3ecjnqgd886pfjrvoh4i5h9o26g2uc.jpg" alt="Strategic Planning" />
+        <img src={image1} alt="Strategic Planning" className="bottom-image" />
+        <img src={image2} alt="Floating" className="top-image" />
       </div>
     </div>
   );

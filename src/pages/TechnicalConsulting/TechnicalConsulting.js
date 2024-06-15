@@ -13,7 +13,7 @@ const TechnicalConsulting = () => {
       <AboutUs />
       <Approach />
       <Expertise />
-      {/* <WhyChooseUs /> */}
+      <WhyChooseUs />
       <ContactForm />
     </div>
   );

@@ -1,0 +1,51 @@
+.winning-with-us-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff;
+  }
+  
+  .winning-with-us-description {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 40px;
+  }
+  
+  .winning-with-us-logo-row {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  
+  .winning-with-us-logo-row img {
+    max-height: 100px;
+    margin: 0 20px;
+    display: inline-block;
+  }
+  
+  @keyframes winning-with-us-moveLeft {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  
+  @keyframes winning-with-us-moveRight {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(50%);
+    }
+  }
+  
+  .winning-with-us-logo-row.first-row {
+    animation: winning-with-us-moveLeft 10s linear infinite;
+  }
+  
+  .winning-with-us-logo-row.second-row {
+    animation: winning-with-us-moveRight 10s linear infinite;
+  }
+  

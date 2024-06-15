@@ -1,0 +1,83 @@
+.sap-supply-chain-wrapper {
+    width: 100%;
+    padding: 50px 20px;
+    background-color: #fff;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .sap-supply-chain {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .sap-supply-chain p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .sap-supply-chain-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    align-items: center;
+  }
+  
+  .sap-supply-chain-card {
+    padding: 20px;
+  text-align: center;
+  }
+  
+  .sap-supply-chain-card .icon {
+    font-size: 60px;
+    color: #3A8BC8;
+    margin-bottom: 10px;
+    font-weight: 900;
+  }
+  
+  .sap-supply-chain-card h3 {
+    font-size: 52px;
+    color: #3A8BC8;
+    font-weight: 400;
+    margin: 0;
+  }
+  
+  .sap-supply-chain-divider {
+    width: 50px;
+    height: 2px;
+    background-color: #ddd;
+    margin: 10px auto;
+  }
+  
+  .sap-supply-chain-card p {
+    font-size: 20px;
+    color: #333;
+    margin-top: 10px;
+    font-weight: 500;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 767px) {
+    .sap-supply-chain-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .sap-supply-chain-card {
+      margin-bottom: 20px;
+    }
+  
+    .sap-supply-chain .last-row {
+      grid-column: span 1;
+    }
+
+    .blank-card {
+        display: none;
+    }
+  }
+  
+  .blank-card {
+    background: transparent;
+    box-shadow: none;
+  }
+  

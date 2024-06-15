@@ -1,0 +1,82 @@
+.full-width-image-section {
+    width: 100%;
+    background-image: url('../../../images/supply-chain-glitter-background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 50px 20px;
+    box-sizing: border-box;
+  }
+  
+  .full-width-image-section .content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .full-width-image-section .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .full-width-image-section .image-container img {
+
+    margin: 0 auto;
+  }
+  
+  .full-width-image-section .text-container {
+    text-align: center;
+  }
+  
+  .full-width-image-section .text-container h2 {
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 48px;
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .full-width-image-section .text-container p {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  /* Mobile view */
+  @media (max-width: 767px) {
+    .full-width-image-section .content {
+      grid-template-columns: 1fr;
+      text-align: center;
+    }
+  
+    .full-width-image-section .image-container {
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      width: 100%;
+    }
+  
+    .full-width-image-section .image-container img {
+      margin: 0 auto;
+    }
+  
+    .full-width-image-section .text-container {
+      text-align: center;
+    }
+  
+    .full-width-image-section .text-container h2 {
+      font-size: 1.5rem;
+    }
+  
+    .full-width-image-section .text-container p {
+      font-size: 0.9rem;
+    }
+  }
+  

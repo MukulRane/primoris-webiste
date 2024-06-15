@@ -9,9 +9,13 @@
   }
   
   .work-life-dream-wrapper h2 {
-    font-size: 2rem;
+    font-size: 36px;
     margin-bottom: 30px;
     font-family: 'Roboto', sans-serif;
+    color: #020101;
+    font-weight: 400;
+    font-style: italic;
+    text-align: left;
   }
   
   .work-life-dream-grid {
@@ -77,6 +81,10 @@
   
     .work-life-dream-text {
       text-align: center;
+    }
+
+    .work-life-dream-wrapper h2 {
+      font-size: 28px;
     }
   }
   

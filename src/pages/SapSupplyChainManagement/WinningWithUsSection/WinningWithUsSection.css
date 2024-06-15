@@ -2,6 +2,8 @@
     text-align: center;
     padding: 50px 20px;
     background-color: #fff;
+    max-width: 1200px;
+    margin: auto;
   }
   
   .winning-with-us-description {

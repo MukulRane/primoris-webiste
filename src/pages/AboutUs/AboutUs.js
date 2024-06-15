@@ -5,6 +5,8 @@ import AboutUsStatsSection from './AboutUsStatsSection/AboutUsStatsSection.js';
 import AboutUsVisionSection from './AboutUsVisionSection/AboutUsVisionSection.js';
 import AboutUsMissionSection from './AboutUsMissionSection/AboutUsMissionSection.js';
 import WorkLifeDreamSection from './WorkLifeDreamSection/WorkLifeDreamSection.js';
+import TestimonialsSection from './TestimonialsSection/TestimonialsSection.js';
+import ClientsSection from './ClientsSection/ClientsSection.js';
 
 const AboutUsPage = () => {
   return (
@@ -14,7 +16,9 @@ const AboutUsPage = () => {
         <AboutUsStatsSection />
         <AboutUsVisionSection />
         <AboutUsMissionSection />
+        <ClientsSection />
         <WorkLifeDreamSection />
+        <TestimonialsSection />
     </div>
   );
 };

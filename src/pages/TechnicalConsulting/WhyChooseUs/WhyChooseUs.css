@@ -4,6 +4,17 @@
   max-width: 1200px;
   margin: 0 auto;
   font-family: 'Roboto', sans-serif;
+  text-align: left
+}
+
+.why-choose-us-para {
+  text-align: left;
+  background-color: #fff;
+  color: #333333;
+  padding-bottom: 40px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 .why-choose-us-section-grid {
@@ -59,14 +70,14 @@
 }
 
 .why-choose-us-section-card-content h3 {
-  font-size: 20px;
+  font-size: 18px;
   margin-bottom: 10px;
   color: #333;
 }
 
 .why-choose-us-section-card-content p {
   font-size: 16px;
-  color: #666;
+  color: #000;
   line-height: 1.6;
   margin-bottom: 40px;
 }
@@ -79,14 +90,6 @@
 
   .why-choose-us-section-card {
     flex-direction: row;
-    border-left: 0;
-    padding-left: 0;
-    border-top: 2px solid #3A8BC8;
-    padding-top: 20px;
-  }
-
-  .why-choose-us-section-card::before {
-    display: none;
   }
 
   .why-choose-us-section-card-icon {

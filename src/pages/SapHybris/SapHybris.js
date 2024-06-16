@@ -4,6 +4,7 @@ import NextGenerationCommerceSection from './NextGenerationCommerceSection/NextG
 import SapHybrisCommerceCloud from './SapHybrisCommerceCloud/SapHybrisCommerceCloud';
 import SapHybrisHANAReadiness from './SapHybrisHANAReadiness/SapHybrisHANAReadiness';
 import SapHybrisHero from './SapHybrisHero/SapHybrisHero';
+import WhyJoinOurPartnership from './WhyJoinOurPartnership/WhyJoinOurPartnership';
 
 const SapHybris = () => {
   return (
@@ -12,6 +13,7 @@ const SapHybris = () => {
       <NextGenerationCommerceSection />
       <SapHybrisCommerceCloud />
       <SapHybrisHANAReadiness />
+      <WhyJoinOurPartnership />
       <ContactForm />
     </div>
   );

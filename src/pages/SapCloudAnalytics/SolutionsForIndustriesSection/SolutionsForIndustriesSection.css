@@ -75,27 +75,7 @@
     background-color: rgba(0, 0, 0, 0.3);
   }
   
-  @media (min-width: 1200px) {
-    .solutions-for-industries-section {
-      max-width: 1200px;
-    }
-  
-    .solutions-for-industries-solution-card {
-      flex: 1 1 calc(25% - 20px); /* Adjusted for 4 cards per row */
-      height: 0;
-      padding-bottom: calc(30% - 20px);
-    }
-  }
-  
   @media (max-width: 768px) {
-    .solutions-for-industries-solution-card {
-      flex: 1 1 calc(50% - 10px); /* Adjusted for 2 cards per row on smaller screens */
-      height: 0;
-      padding-bottom: calc(50% - 10px);
-    }
-  }
-  
-  @media (max-width: 480px) {
     .solutions-for-industries-solution-card {
       flex: 1 1 100%; /* Full width on extra small screens */
       height: 0;

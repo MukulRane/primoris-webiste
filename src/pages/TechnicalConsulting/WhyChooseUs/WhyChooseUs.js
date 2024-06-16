@@ -6,6 +6,7 @@ import icon2 from '../../../images/why-choose-2.png';
 import icon3 from '../../../images/why-choose-3.png';
 import icon4 from '../../../images/why-choose-4.png';
 import icon5 from '../../../images/why-choose-5.png';
+import SectionTitle from '../../../components/SectionTitle/SectionTitle';
 
 const cardData = [
   {
@@ -38,6 +39,12 @@ const cardData = [
 const WhyChooseUs = () => {
   return (
     <section className="why-choose-us-section-wrapper">
+      <div>
+        <SectionTitle title="Why Choose Us" />
+      </div>
+        <p className="why-choose-us-para">
+          We offer a wide range of technical consulting services tailored to meet the unique needs of our clients. Our areas of expertise include
+        </p>
       <div className="why-choose-us-section-grid">
         {cardData.map((card, index) => (
           <div className="why-choose-us-section-card" key={index}>

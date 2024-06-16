@@ -22,27 +22,31 @@ import logo17 from '../../../images/supply-chain-virtusa.png';
 import logo18 from '../../../images/supply-chain-mindtree.png';
 
 const WinningWithUsSection = () => {
-    const logosRow1 = [logo1, logo2, logo3, logo4, logo5, logo6, logo7, logo8, logo9];
-    const logosRow2 = [logo10, logo11, logo12, logo13, logo14, logo15, logo16, logo17, logo18];
-  
-    return (
-      <div className="winning-with-us-section">
-        <SectionTitle title="Who is winning with us?" />
-        <p className="winning-with-us-description">
-          Streamline core business functions, including accounting, financials, purchasing, inventory, sales, customer relationships, reporting, and analytics, for efficient management.
-        </p>
+  const logosRow1 = [logo1, logo2, logo3, logo4, logo5, logo6, logo7, logo8, logo9];
+  const logosRow2 = [logo10, logo11, logo12, logo13, logo14, logo15, logo16, logo17, logo18];
+
+  return (
+    <div className="winning-with-us-section">
+      <SectionTitle title="Who is winning with us?" />
+      <p className="winning-with-us-description">
+        Streamline core business functions, including accounting, financials, purchasing, inventory, sales, customer relationships, reporting, and analytics, for efficient management.
+      </p>
+      <div className="winning-with-us-logo-container">
         <div className="winning-with-us-logo-row first-row">
-          {logosRow1.concat(logosRow1).map((logo, index) => (
+          {[...logosRow1, ...logosRow1].map((logo, index) => (
             <img key={`first-${index}`} src={logo} alt={`Logo ${index + 1}`} />
           ))}
         </div>
+      </div>
+      <div className="winning-with-us-logo-container">
         <div className="winning-with-us-logo-row second-row">
-          {logosRow2.concat(logosRow2).map((logo, index) => (
+          {[...logosRow2, ...logosRow2].map((logo, index) => (
             <img key={`second-${index}`} src={logo} alt={`Logo ${index + 1}`} />
           ))}
         </div>
       </div>
-    );
-  };
-  
-  export default WinningWithUsSection;
+    </div>
+  );
+};
+
+export default WinningWithUsSection;

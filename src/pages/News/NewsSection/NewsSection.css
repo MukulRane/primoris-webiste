@@ -45,6 +45,7 @@
   
   .news-image {
     width: 70%;
+    max-width: 600px; /* Limit the maximum width of the image */
     animation: floating 2000ms ease infinite;
   }
 

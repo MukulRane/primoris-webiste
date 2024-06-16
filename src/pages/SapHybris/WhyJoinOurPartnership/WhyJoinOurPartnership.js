@@ -28,7 +28,7 @@ const WhyJoinOurPartnership = () => {
   return (
     <section className="why-choose-us-section-wrapper">
       <div>
-        <SectionTitle title="Why Choose Us" />
+        <SectionTitle title="Why Join Our Partnership?" />
       </div>
       <div className="why-choose-us-section-grid">
         {cardData.map((card, index) => (

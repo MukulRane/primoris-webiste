@@ -47,6 +47,7 @@
 
 .about-us-image {
   width: 70%;
+  max-width: 600px;
   animation: floating 2000ms ease infinite;
 }
 

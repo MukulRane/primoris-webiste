@@ -1,17 +1,24 @@
 @import url('../../fonts/fonts.css');
 
+.footer-wrapper {
+  background-color: #0a0a0a;
+  width: 100%;
+  padding: 0; /* Adjust padding as needed */
+}
+
 .footer {
   background-color: #000;
   color: #fff;
-  padding: 20px 0;
+  padding: 20px 20px;
   text-align: center;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .footer-top {
   display: flex;
   flex-direction: column;
-  max-width: 1200px;
-  margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 20px;
@@ -61,7 +68,7 @@
   text-decoration: none;
   margin-bottom: 5px;
   font-size: 12px;
-  line-height: 1.5
+  line-height: 1.5;
 }
 
 .social-icon {
@@ -81,4 +88,40 @@
   font-size: 12px;
   color: #8B8B8B;
   font-weight: 700;
+}
+
+@media (max-width: 767px) {
+  .footer-top {
+    flex-direction: column;
+  }
+
+  .footer-logo-social {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-logo {
+    align-self: flex-start;
+    margin-bottom: 20px;
+  }
+
+  .footer-social {
+    align-self: flex-end;
+    margin-bottom: 20px;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-column {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+  }
 }

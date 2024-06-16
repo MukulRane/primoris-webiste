@@ -52,7 +52,7 @@ const Navbar = () => {
     <div className={`navbar-container ${isErpPage ? 'transparent' : ''}`}>
       <div className="navbar">
         <div className="logo-container">
-          <img src={logo} alt="Primoris Systems" className="logo" />
+        <Link to="/"><img src={logo} alt="Primoris Systems" className="logo" /></Link>
         </div>
         <nav>
           <ul>

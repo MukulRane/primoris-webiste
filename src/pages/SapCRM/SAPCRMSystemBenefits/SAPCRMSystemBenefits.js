@@ -1,8 +1,40 @@
 import React from 'react';
 import './SAPCRMSystemBenefits.css';
 import SectionTitle from '../../../components/SectionTitle/SectionTitle';
+import { useRef, useEffect, useState } from 'react';
 
 const SAPCRMSystemBenefits = () => {
+
+  const [isPartners, setIsPartners] = useState(false);
+  const isPartnersRef = useRef(null);
+
+  useEffect(() => {
+    console.log('hrllo')
+    const isPartnersObserver = new IntersectionObserver(
+      (entries) => {
+        const entry = entries[0];
+        if (entry.isIntersecting && !isPartners) {
+          setIsPartners(true);
+        }
+      },
+      {
+        threshold: 0
+      }
+    );
+
+    if (isPartnersRef.current) {
+      isPartnersObserver.observe(isPartnersRef.current);
+    }
+
+
+    return () => {
+      if (isPartnersRef.current) {
+        isPartnersObserver.unobserve(isPartnersRef.current);
+      }
+    };
+  }, [isPartners]);
+
+
   return (
     <div className="sap-crm-system-benefits-wrapper">
       <div className="sap-crm-system-benefits">
@@ -32,7 +64,8 @@ const SAPCRMSystemBenefits = () => {
             </ul>
           </div>
         </div>
-        <div className="sap-crm-system-benefits-image">
+        
+        <div ref={isPartnersRef} className={`sap-crm-system-benefits-image ${isPartners ? 'come-from-right' : ''}`}>
           <img src={require('../../../images/sap-crm-system-benefits.jpg')} alt="SAP CRM System Benefits" />
         </div>
       </div>

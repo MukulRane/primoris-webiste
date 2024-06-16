@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import './SupplyChainQualityAssuranceSection.css';
 import SectionTitle from '../../../components/SectionTitle/SectionTitle';
 
@@ -26,17 +26,54 @@ const qualityAssuranceData = [
 ];
 
 const SupplyChainQualityAssuranceSection = () => {
+  const [visibleCards, setVisibleCards] = useState({});
+  const cardRefs = useRef([]);
+
+  useEffect(() => {
+    const handleIntersection = (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setVisibleCards((prev) => ({
+            ...prev,
+            [entry.target.dataset.index]: true,
+          }));
+        }
+      });
+    };
+
+    const observer = new IntersectionObserver(handleIntersection, {
+      threshold: 0.5,
+    });
+
+    cardRefs.current.forEach((ref) => {
+      if (ref) observer.observe(ref);
+    });
+
+    return () => {
+      cardRefs.current.forEach((ref) => {
+        if (ref) observer.unobserve(ref);
+      });
+    };
+  }, []);
+
   return (
     <section className="supply-chain-quality-assurance-section">
       <SectionTitle title="Our Expertise" />
-      <p className="supply-chain-quality-assurance-sub-title">Lean approach to Intralogistics can overcome these challenges and help to reduce the overall TAT, improve productivity and accuracy.</p>
+      <p className="supply-chain-quality-assurance-sub-title">
+        Lean approach to Intralogistics can overcome these challenges and help to reduce the overall TAT, improve productivity and accuracy.
+      </p>
       <div className="supply-chain-qa-container">
         {qualityAssuranceData.map((item, index) => (
-          <div className="supply-chain-qa-row" key={index}>
-            <div className="supply-chain-qa-card">
+          <div
+            ref={(el) => (cardRefs.current[index] = el)}
+            className="supply-chain-qa-row"
+            key={index}
+            data-index={index}
+          >
+            <div className={`supply-chain-qa-card ${visibleCards[index] ? 'list-transition-left' : ''}`}>
               <p>{item.title}</p>
             </div>
-            <div className="supply-chain-qa-description">
+            <div className={`supply-chain-qa-description ${visibleCards[index] ? 'list-transition-right' : ''}`}>
               <p>{item.description}</p>
             </div>
           </div>

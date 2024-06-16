@@ -69,14 +69,14 @@ const QualityAssuranceSection = () => {
         {qualityAssuranceData.map((item, index) => (
           <div
             ref={(el) => (cardRefs.current[index] = el)}
-            className={visibleCards[index] ? "qa-row list-transition-bottom" : "qa-row"}
+            className="qa-row"
             key={index}
             data-index={index}
           >
-            <div className={visibleCards[index] ? "qa-card list-transition-bottom" : "qa-card"}>
+            <div className={`qa-card ${visibleCards[index] ? "list-transition-left" : ""}`}>
               <p>{item.title}</p>
             </div>
-            <div className="qa-description">
+            <div className={`qa-description ${visibleCards[index] ? "list-transition-right" : ""}`}>
               <p>{item.description}</p>
             </div>
           </div>

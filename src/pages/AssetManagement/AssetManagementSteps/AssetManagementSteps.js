@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import './AssetManagementSteps.css';
 
 const readinessData = [
@@ -35,35 +35,70 @@ const readinessData = [
 ];
 
 const AssetManagementSteps = () => {
+  const [visibleItems, setVisibleItems] = useState({});
+  const itemRefs = useRef([]);
+
+  useEffect(() => {
+    const handleIntersection = (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setVisibleItems((prev) => ({
+            ...prev,
+            [entry.target.dataset.index]: true,
+          }));
+        }
+      });
+    };
+
+    const observer = new IntersectionObserver(handleIntersection, {
+      threshold: 0.5,
+    });
+
+    itemRefs.current.forEach((ref) => {
+      if (ref) observer.observe(ref);
+    });
+
+    return () => {
+      itemRefs.current.forEach((ref) => {
+        if (ref) observer.unobserve(ref);
+      });
+    };
+  }, []);
+
   return (
     <section className="asset-readiness-section">
       {readinessData.map((item, index) => (
-        <div className="asset-readiness-row" key={index}>
+        <div
+          ref={(el) => (itemRefs.current[index] = el)}
+          className="asset-readiness-row"
+          key={index}
+          data-index={index}
+        >
           {index % 2 === 0 ? (
             <>
               <div className="asset-readiness-content">
                 <div className="title-row">
-                    <h2 className="number">{item.number}</h2>
-                    <h3 className="title">{item.title}</h3>
+                  <h2 className="number">{item.number}</h2>
+                  <h3 className="title">{item.title}</h3>
                 </div>
                 <div
                   className="description"
                   dangerouslySetInnerHTML={{ __html: item.description }}
                 ></div>
               </div>
-              <div className="asset-readiness-image">
+              <div className={`asset-readiness-image ${visibleItems[index] ? 'come-from-right' : ''}`}>
                 <img src={item.image} alt={item.title} />
               </div>
             </>
           ) : (
             <>
-              <div className="asset-readiness-image">
+              <div className={`asset-readiness-image ${visibleItems[index] ? 'come-from-left' : ''}`}>
                 <img src={item.image} alt={item.title} />
               </div>
               <div className="asset-readiness-content">
                 <div className="asset-title-row">
-                    <h2 className="number">{item.number}</h2>
-                    <h3 className="title">{item.title}</h3>
+                  <h2 className="number">{item.number}</h2>
+                  <h3 className="title">{item.title}</h3>
                 </div>
                 <div
                   className="description"

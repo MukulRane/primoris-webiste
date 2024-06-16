@@ -1,12 +1,39 @@
-import React from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import './NewsSection.css';
 import newsImage from '../../../images/news-hero.png';
 
 const NewsSection = () => {
+  const [visible, setVisible] = useState(false);
+  const textRef = useRef(null);
+
+  useEffect(() => {
+    const handleIntersection = (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setVisible(true);
+        }
+      });
+    };
+
+    const observer = new IntersectionObserver(handleIntersection, {
+      threshold: 0.5,
+    });
+
+    if (textRef.current) {
+      observer.observe(textRef.current);
+    }
+
+    return () => {
+      if (textRef.current) {
+        observer.unobserve(textRef.current);
+      }
+    };
+  }, []);
+
   return (
     <div className="news-section-wrapper">
       <div className="news-section">
-        <div className="news-text">
+        <div ref={textRef} className={`news-text ${visible ? 'come-from-left' : ''}`}>
           <h2>News</h2>
           <p>
             Keep you up-to-date with the latest happenings and developments within our company.

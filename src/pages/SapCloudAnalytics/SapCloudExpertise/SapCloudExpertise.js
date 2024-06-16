@@ -3,6 +3,7 @@ import '../../SapDevelopment/OurExpertiseSection/OurExpertiseSection.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheckSquare, faCloud, faCog } from '@fortawesome/free-solid-svg-icons';
 import SectionTitle from '../../../components/SectionTitle/SectionTitle';
+import { useRef, useEffect, useState } from 'react';
 
 const expertiseData = [
   {
@@ -38,10 +39,41 @@ const expertiseData = [
 ];
 
 const OurExpertiseSection = () => {
+
+  const [isPartners, setIsPartners] = useState(false);
+  const isPartnersRef = useRef(null);
+
+  useEffect(() => {
+    const isPartnersObserver = new IntersectionObserver(
+      (entries) => {
+        const entry = entries[0];
+        if (entry.isIntersecting && !isPartners) {
+          setIsPartners(true);
+        }
+      },
+      {
+        threshold: 0.5
+      }
+    );
+
+    if (isPartnersRef.current) {
+      isPartnersObserver.observe(isPartnersRef.current);
+    }
+
+
+    return () => {
+      if (isPartnersRef.current) {
+        isPartnersObserver.unobserve(isPartnersRef.current);
+      }
+    };
+  }, [isPartners]);
+
+
   return (
     <section className="our-expertise-section">
       <SectionTitle title="Our Expertise" dividerColor="#000" />
-      <div className="our-expertise-cards-container">
+      <div ref={isPartnersRef} 
+        className={`our-expertise-cards-container ${isPartners ? 'appear' : ''}`}>
         {expertiseData.map((expertise, index) => (
           <div className="our-expertise-item" key={index}>
             <div className="icon-container">

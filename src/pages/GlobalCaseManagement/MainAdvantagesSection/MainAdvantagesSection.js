@@ -1,8 +1,34 @@
-import React from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import './MainAdvantagesSection.css';
 import SectionTitle from '../../../components/SectionTitle/SectionTitle';
 
 const MainAdvantagesSection = () => {
+  const [isImageVisible, setIsImageVisible] = useState(false);
+  const imageRef = useRef(null);
+
+  useEffect(() => {
+    const handleIntersection = (entries) => {
+      const entry = entries[0];
+      if (entry.isIntersecting && !isImageVisible) {
+        setIsImageVisible(true);
+      }
+    };
+
+    const observer = new IntersectionObserver(handleIntersection, {
+      threshold: 0.3,
+    });
+
+    if (imageRef.current) {
+      observer.observe(imageRef.current);
+    }
+
+    return () => {
+      if (imageRef.current) {
+        observer.unobserve(imageRef.current);
+      }
+    };
+  }, [isImageVisible]);
+
   return (
     <div className="section-with-equal-main-advantages-wrapper">
       <SectionTitle title="Main Advantages" dividerColor="#000" />
@@ -20,7 +46,7 @@ const MainAdvantagesSection = () => {
             <li>Process all of your data independent of its source, format and location.</li>
           </ul>
         </div>
-        <div className="section-with-equal-main-advantages-image">
+        <div ref={imageRef} className={`section-with-equal-main-advantages-image ${isImageVisible ? 'come-from-right' : ''}`}>
           <img src={require('../../../images/gcm-advantages.png')} alt="Main Advantages" />
         </div>
       </div>

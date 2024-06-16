@@ -47,6 +47,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    transform: translateX(100px);
   }
   
   .qa-image-circle-image {
@@ -55,4 +56,18 @@
     height: auto;
     margin-bottom: 20px;
   }
+
   
+
+@keyframes floating1 {
+  0% {
+    transform: translateY(80px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+  
+  .image-transition-bottom img{
+    animation: floating1 2s ease;
+  }

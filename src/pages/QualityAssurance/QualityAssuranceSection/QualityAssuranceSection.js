@@ -1,7 +1,7 @@
 import React from 'react';
 import './QualityAssuranceSection.css';
+import { useRef, useEffect, useState } from 'react';
 import SectionTitle from '../../../components/SectionTitle/SectionTitle';
-
 
 const qualityAssuranceData = [
   {
@@ -31,14 +31,49 @@ const qualityAssuranceData = [
 ];
 
 const QualityAssuranceSection = () => {
+  const [visibleCards, setVisibleCards] = useState({});
+  const cardRefs = useRef([]);
+
+  useEffect(() => {
+    const handleIntersection = (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setVisibleCards((prev) => ({
+            ...prev,
+            [entry.target.dataset.index]: true,
+          }));
+        }
+      });
+    };
+
+    const observer = new IntersectionObserver(handleIntersection, {
+      threshold: 0.5,
+    });
+
+    cardRefs.current.forEach((ref) => {
+      if (ref) observer.observe(ref);
+    });
+
+    return () => {
+      cardRefs.current.forEach((ref) => {
+        if (ref) observer.unobserve(ref);
+      });
+    };
+  }, []);
+
   return (
     <section className="quality-assurance-section">
       <SectionTitle title="Latest News" />
       <p className="quality-assurance-sub-title">Scope of Services</p>
       <div className="qa-container">
         {qualityAssuranceData.map((item, index) => (
-          <div className="qa-row" key={index}>
-            <div className="qa-card">
+          <div
+            ref={(el) => (cardRefs.current[index] = el)}
+            className={visibleCards[index] ? "qa-row list-transition-bottom" : "qa-row"}
+            key={index}
+            data-index={index}
+          >
+            <div className={visibleCards[index] ? "qa-card list-transition-bottom" : "qa-card"}>
               <p>{item.title}</p>
             </div>
             <div className="qa-description">

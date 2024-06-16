@@ -90,3 +90,6 @@
     }
   }
   
+  .list-transition-bottom{
+    animation: floating1 2s ease;
+  }

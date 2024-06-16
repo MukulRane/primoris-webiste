@@ -32,6 +32,7 @@ import Careers from './pages/Careers/Careers';
 import Blogs from './pages/Blogs/Blogs';
 import SapSupplyChainManagement from './pages/SapSupplyChainManagement/SapSupplyChainManagement';
 import AboutUsPage from './pages/AboutUs/AboutUs';
+import ContactUs from './pages/ContactUs/ContactUs';
 
 function App() {
   return (
@@ -70,6 +71,7 @@ function App() {
           <Route path="/blogs" element={<Blogs />} />
           <Route path="/sap-supply-chain-management" element={<SapSupplyChainManagement />} />
           <Route path="/about-us" element={<AboutUsPage />} />
+          <Route path="/contact-us" element={<ContactUs />} />
           {/* Add other routes here as needed */}
         </Routes>
       </main>

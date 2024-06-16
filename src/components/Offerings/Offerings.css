@@ -1,13 +1,19 @@
 .offerings {
-    width: 1200px;
-    margin: 0 auto;
-    padding: 50px;
-    text-align: left;
-  }
-  
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: left;
+  padding: 0 20px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+@media (max-width: 767px) {
   .cards {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+    grid-template-columns: 1fr;
   }
-  
+}

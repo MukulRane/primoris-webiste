@@ -1,6 +1,5 @@
 import React from 'react';
 import HeroSection from '../../components/HeroSection/HeroSection';
-import ImageSection from '../../components/ImageSection/ImageSection';
 import Offerings from '../../components/Offerings/Offerings';
 import Partners from '../../components/Partners/Partners';
 import LatestNews from '../../components/LatestNews/LatestNews';
@@ -12,7 +11,7 @@ const HomePage = () => {
   return (
     <>
       <HeroSection />
-      <ImageSection />
+      {/* <ImageSection /> */}
       <Offerings />
       <Partners />
       <LatestNews />

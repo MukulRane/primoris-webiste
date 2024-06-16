@@ -1,25 +1,39 @@
 .partners-wrapper {
-    background-color: #f9f9f9;
-    width: 100%;
-    padding: 50px 0; /* Adjust padding as needed */
-  }
-  
+  background-color: #f9f9f9;
+  width: 100%;
+  padding: 50px 20px; /* Adjust padding as needed */
+}
+
+.partners {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between; /* Space between title and logos */
+  align-items: center; /* Align items vertically center */
+}
+
+.partners-logos {
+  display: grid;
+  gap: 20px; /* Adjust gap between images as needed */
+  grid-template-columns: repeat(4, 1fr); /* Four columns by default */
+  justify-items: center; /* Center align items horizontally */
+  align-items: center; /* Center align items vertically */
+}
+
+.partner-logo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+@media (max-width: 767px) {
   .partners {
-    width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center; /* Centers items vertically if needed */
-    justify-content: space-between; /* Distributes space between items */
+    flex-direction: column;
+    text-align: center;
   }
-  
+
   .partners-logos {
-    display: flex;
-    gap: 20px; /* Adjust gap between images as needed */
+    grid-template-columns: 1fr; /* Single column for smaller screens */
   }
-  
-  .partner-logo {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-  }
-  
+}

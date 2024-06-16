@@ -1,40 +1,55 @@
 @import url('../../fonts/fonts.css');
 
 .location-details-wrapper {
-    background-color: #f9f9f9;
-    width: 100%;
+  background-color: #f9f9f9;
+  width: 100%;
+}
+
+.location-details {
+  display: flex;
+  justify-content: center;
+  padding: 50px 0;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.location {
+  text-align: center;
+  width: 30%;
+  margin: 0 10px;
+}
+
+.location img {
+  max-width: 100px;
+  margin-bottom: 20px;
+}
+
+.location h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+.location p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: #25262D;
+  line-height: 1.5;
+}
+
+@media (max-width: 767px) {
+  .location-details {
+    flex-direction: column;
+    align-items: center;
   }
 
-  .location-details {
-    display: flex;
-    justify-content: center;
-    padding: 50px 0;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
   .location {
-    text-align: center;
-    width: 30%;
-    margin: 0 10px;
-  }
-  
-  .location img {
-    max-width: 100px;
+    width: 80%;
     margin-bottom: 20px;
   }
-  
-  .location h2 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    color: #333333;
-    margin-bottom: 10px;
+
+  .location img {
+    max-width: 150px;
   }
-  
-  .location p {
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    color: #25262D;
-    line-height: 1.5;
-  }
-  
+}

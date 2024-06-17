@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import './HeroSection.css';
 import carouselImage1 from '../../images/homepage-carousal-1.jpg';
 import carouselImage2 from '../../images/homepage-carousal-2.jpg';
@@ -58,22 +58,60 @@ const carouselData = [
 
 const HeroSection = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [transitioning, setTransitioning] = useState(false);
+  const intervalRef = useRef(null);
+
+  useEffect(() => {
+    startInterval();
+    return () => stopInterval();
+  }, []);
+
+  const startInterval = () => {
+    stopInterval();
+    intervalRef.current = setInterval(() => {
+      nextSlide();
+    }, 3000);
+  };
+
+  const stopInterval = () => {
+    if (intervalRef.current) {
+      clearInterval(intervalRef.current);
+      intervalRef.current = null;
+    }
+  };
 
   const nextSlide = () => {
-    setCurrentSlide((prev) => (prev === carouselData.length - 1 ? 0 : prev + 1));
+    setTransitioning(true);
+    setTimeout(() => {
+      setCurrentSlide((prev) => (prev === carouselData.length - 1 ? 0 : prev + 1));
+      setTransitioning(false);
+    }, 500);
   };
 
   const prevSlide = () => {
-    setCurrentSlide((prev) => (prev === 0 ? carouselData.length - 1 : prev - 1));
+    setTransitioning(true);
+    setTimeout(() => {
+      setCurrentSlide((prev) => (prev === 0 ? carouselData.length - 1 : prev - 1));
+      setTransitioning(false);
+    }, 500);
   };
 
   return (
-    <div className="hero-wrapper">
+    <div
+      className="hero-wrapper"
+      onMouseEnter={stopInterval}
+      onMouseLeave={startInterval}
+    >
       <div className="carousel-container">
         <div className="top-left-box"></div>
         <div className="bottom-right-box"></div>
         {carouselData.map((slide, index) => (
-          <div key={index} className={`carousel-slide ${index === currentSlide ? 'active' : ''}`}>
+          <div
+            key={index}
+            className={`carousel-slide ${index === currentSlide ? 'active' : ''} ${
+              transitioning ? 'transition' : ''
+            }`}
+          >
             <div className="carousel-content">
               <div className="carousel-text-column">
                 {index === 0 && (

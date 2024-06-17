@@ -13,20 +13,28 @@
 }
 
 .winning-with-us-logo-container {
-  overflow: hidden; /* Ensure container is hidden */
-  margin-bottom: 20px; /* Add space between rows */
+  overflow: hidden;
+  margin-bottom: 20px;
 }
 
 .winning-with-us-logo-row {
   display: flex;
   align-items: center;
   white-space: nowrap;
+  width: calc(200%); /* Ensure the track is wide enough to scroll */
 }
 
 .winning-with-us-logo-row img {
   max-height: 100px;
   margin: 0 20px;
   display: inline-block;
+}
+
+.client-logo {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @keyframes marqueeLeft {
@@ -38,19 +46,10 @@
   }
 }
 
-@keyframes marqueeRight {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(50%);
-  }
-}
-
 .winning-with-us-logo-row.first-row {
   animation: marqueeLeft 25s linear infinite;
 }
 
 .winning-with-us-logo-row.second-row {
-  animation: marqueeRight 25s linear infinite;
+  animation: marqueeLeft 25s linear infinite reverse;
 }

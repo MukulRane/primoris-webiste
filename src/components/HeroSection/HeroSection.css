@@ -1,6 +1,7 @@
+/* HeroSection.css */
 .hero-wrapper {
   width: 100%;
-  margin-bottom: 80px
+  margin-bottom: 80px;
 }
 
 .carousel-container {
@@ -19,7 +20,7 @@
   left: 0;
   width: 9.33%; /* Responsive width */
   height: 114px; /* Fixed height for larger screens */
-  background-color: #3A8BC8;
+  background-color: #3a8bc8;
   z-index: 1;
 }
 
@@ -30,18 +31,22 @@
   right: 0;
   width: 27.25%; /* Responsive width */
   height: 372px; /* Fixed height for larger screens */
-  background-color: #3A8BC8;
+  background-color: #3a8bc8;
   z-index: 1;
   border-radius: 20px 0 0 0; /* Rounded corner */
 }
 
 .carousel-slide {
   display: none;
-  transition: opacity 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
 }
 
 .carousel-slide.active {
   display: flex;
+}
+
+.carousel-slide.transition {
+  transform: translateX(-100%);
 }
 
 .carousel-content {
@@ -63,7 +68,7 @@
 .carousel-text-column .carousel-subtitle2 {
   width: 100%;
   font-size: 20px;
-  font-family: "Rubik";
+  font-family: 'Rubik';
   font-weight: 700;
   line-height: 120%;
   background-color: transparent;
@@ -71,7 +76,7 @@
 }
 
 .carousel-text-column .carousel-subtitle {
-  color: #3B61F4;
+  color: #3b61f4;
 }
 
 .carousel-text-column .carousel-subtitle2 {
@@ -88,7 +93,7 @@
 .carousel-text-column .carousel-title {
   font-size: 52px;
   color: #000;
-  font-family: "Ubuntu";
+  font-family: 'Ubuntu';
   font-weight: 500;
   line-height: 100%;
 }
@@ -96,21 +101,21 @@
 .carousel-text-column .carousel-title2 {
   font-size: 70px;
   color: #000;
-  font-family: "Ubuntu";
+  font-family: 'Ubuntu';
   font-weight: 700;
   line-height: 100%;
   letter-spacing: 2;
 }
 
 .carousel-text-column .carousel-title2 span {
-  color: #3A8BC8; /* Blue color for AI */
+  color: #3a8bc8; /* Blue color for AI */
 }
 
 .carousel-paragraph {
   opacity: 0.7;
   font-size: 16px;
   color: #000;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
   line-height: 155%;
   background-color: transparent;
@@ -134,8 +139,8 @@
   width: 100%;
   font-size: 16px;
   text-align: left;
-  color: #01AED1;
-  font-family: "Roboto", sans-serif;
+  color: #01aed1;
+  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   line-height: 130%;
   letter-spacing: 1px;
@@ -146,7 +151,7 @@
 .carousel-item img {
   width: 80px;
   height: 80px;
-  border: 3px solid #01AED1;
+  border: 3px solid #01aed1;
   border-radius: 15px;
   padding: 5px;
 }
@@ -161,10 +166,10 @@
 .carousel-button {
   font-size: 16px;
   text-align: center;
-  color: #FFF;
-  font-family: "Ubuntu";
+  color: #fff;
+  font-family: 'Ubuntu';
   font-weight: 700;
-  background-color: #3A8BC8;
+  background-color: #3a8bc8;
   border-radius: 6px;
   height: 50px;
   width: 146px;
@@ -178,12 +183,14 @@
   align-items: center;
 }
 
-.arrow-left, .arrow-right {
+.arrow-left,
+.arrow-right {
   font-size: 1.5rem;
   cursor: pointer;
 }
 
-.arrow-left::before, .arrow-right::before {
+.arrow-left::before,
+.arrow-right::before {
   display: inline-block;
   content: '';
   width: 20px;
@@ -215,7 +222,7 @@
   .carousel-container {
     padding: 40px 0px; /* Increase padding */
     padding-bottom: 0;
-    background-color: #3A8BC8; /* Change background color */
+    background-color: #3a8bc8; /* Change background color */
     max-width: 404px; /* Limit max-width */
     margin: 0 auto; /* Center the container */
   }
@@ -227,12 +234,12 @@
   .carousel-paragraph,
   .carousel-item p,
   .carousel-button {
-    color: #FFF; /* Change text color to white */
+    color: #fff; /* Change text color to white */
   }
 
   .carousel-button {
-    background-color: #FFF; /* Change button background to white */
-    color: #3A8BC8; /* Change button text color to blue */
+    background-color: #fff; /* Change button background to white */
+    color: #3a8bc8; /* Change button text color to blue */
   }
 
   .top-left-box,
@@ -264,8 +271,8 @@
 
   .carousel-text-column .carousel-subtitle {
     font-size: 16px;
-    color: #FFF;
-    font-family: "Rubik";
+    color: #fff;
+    font-family: 'Rubik';
     font-weight: 700;
     line-height: 120%;
   }
@@ -273,7 +280,7 @@
   .carousel-item p {
     font-size: 14px;
     text-align: left;
-    color: #FFF;
+    color: #fff;
     font-weight: 500;
     line-height: 130%;
     letter-spacing: 1px;
@@ -285,10 +292,10 @@
 
   .carousel-text-column .carousel-subtitle2 {
     font-size: 16px;
-    color: #FC9B00;
+    color: #fc9b00;
   }
 
-  .carousel-paragraph{
+  .carousel-paragraph {
     font-size: 14px;
   }
 
@@ -302,6 +309,6 @@
     background-color: #fff;
     width: 60px;
     height: 60px;
-    border: 3px solid #FFF; /* Change border color to white */
+    border: 3px solid #fff; /* Change border color to white */
   }
 }

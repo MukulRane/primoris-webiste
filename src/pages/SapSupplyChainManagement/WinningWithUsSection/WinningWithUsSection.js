@@ -5,7 +5,7 @@ import logo1 from '../../../images/supply-chain-hoag.png';
 import logo2 from '../../../images/supply-chain-mauser.png';
 import logo3 from '../../../images/supply-chain-capgemini.png';
 import logo4 from '../../../images/supply-chain-lifeinsurance.png';
-import logo5 from '../../../images/supply-chain-bosch.png'; // Replace with actual image paths
+import logo5 from '../../../images/supply-chain-bosch.png';
 import logo6 from '../../../images/supply-chain-techmahindra.png';
 import logo7 from '../../../images/supply-chain-mauser.png';
 import logo8 from '../../../images/supply-chain-truspec.png';
@@ -33,15 +33,19 @@ const WinningWithUsSection = () => {
       </p>
       <div className="winning-with-us-logo-container">
         <div className="winning-with-us-logo-row first-row">
-          {[...logosRow1, ...logosRow1].map((logo, index) => (
-            <img key={`first-${index}`} src={logo} alt={`Logo ${index + 1}`} />
+          {logosRow1.concat(logosRow1).map((logo, index) => (
+            <div className="client-logo" key={`first-${index}`}>
+              <img src={logo} alt={`Logo ${index + 1}`} />
+            </div>
           ))}
         </div>
       </div>
       <div className="winning-with-us-logo-container">
         <div className="winning-with-us-logo-row second-row">
-          {[...logosRow2, ...logosRow2].map((logo, index) => (
-            <img key={`second-${index}`} src={logo} alt={`Logo ${index + 1}`} />
+          {logosRow2.concat(logosRow2).map((logo, index) => (
+            <div className="client-logo" key={`second-${index}`}>
+              <img src={logo} alt={`Logo ${index + 1}`} />
+            </div>
           ))}
         </div>
       </div>

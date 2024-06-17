@@ -30,10 +30,13 @@
 @media (max-width: 767px) {
   .partners {
     flex-direction: column;
-    text-align: center;
+    text-align: left; /* Align SectionTitle to the left */
+    align-items: flex-start; /* Align items to the start (left) */
   }
 
   .partners-logos {
     grid-template-columns: 1fr; /* Single column for smaller screens */
+    width: 100%; /* Ensure logos take full width */
+    margin-top: 20px; /* Add some space between title and logos */
   }
 }

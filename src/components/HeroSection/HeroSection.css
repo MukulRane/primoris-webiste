@@ -1,5 +1,6 @@
 .hero-wrapper {
   width: 100%;
+  margin-bottom: 80px
 }
 
 .carousel-container {
@@ -7,7 +8,8 @@
   max-width: 1200px;
   margin: 50px auto;
   overflow: hidden;
-  padding: 50px 10%; /* Use percentage-based padding */
+  padding: 50px 10%;
+  background-color: #fff; /* Default background color */
 }
 
 /* Top-left blue box */
@@ -30,6 +32,7 @@
   height: 372px; /* Fixed height for larger screens */
   background-color: #3A8BC8;
   z-index: 1;
+  border-radius: 20px 0 0 0; /* Rounded corner */
 }
 
 .carousel-slide {
@@ -208,36 +211,96 @@
   height: auto;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .carousel-container {
-    padding: 20px 5%;
+    padding: 40px 0px; /* Increase padding */
+    padding-bottom: 0;
+    background-color: #3A8BC8; /* Change background color */
+    max-width: 404px; /* Limit max-width */
+    margin: 0 auto; /* Center the container */
   }
 
-  .top-left-box {
-    width: 15%;
-    height: auto; /* Adjust height for smaller screens */
+  .carousel-text-column .carousel-subtitle,
+  .carousel-text-column .carousel-subtitle2,
+  .carousel-text-column .carousel-title,
+  .carousel-text-column .carousel-title2,
+  .carousel-paragraph,
+  .carousel-item p,
+  .carousel-button {
+    color: #FFF; /* Change text color to white */
   }
 
+  .carousel-button {
+    background-color: #FFF; /* Change button background to white */
+    color: #3A8BC8; /* Change button text color to blue */
+  }
+
+  .top-left-box,
   .bottom-right-box {
-    width: 40%;
-    height: auto; /* Adjust height for smaller screens */
+    display: none; /* Hide the boxes on smaller screens */
+  }
+
+  .carousel-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .carousel-text-column {
+    width: 100%;
+    padding: 0 80px;
+    margin-bottom: 20px;
+  }
+
+  .carousel-image-column {
+    width: 100%;
+    padding: 0;
   }
 
   .carousel-text-column .carousel-title {
-    font-size: 36px;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 100%;
+  }
+
+  .carousel-text-column .carousel-subtitle {
+    font-size: 16px;
+    color: #FFF;
+    font-family: "Rubik";
+    font-weight: 700;
+    line-height: 120%;
+  }
+
+  .carousel-item p {
+    font-size: 14px;
+    text-align: left;
+    color: #FFF;
+    font-weight: 500;
+    line-height: 130%;
+    letter-spacing: 1px;
   }
 
   .carousel-text-column .carousel-title2 {
-    font-size: 50px;
+    font-size: 40px;
+  }
+
+  .carousel-text-column .carousel-subtitle2 {
+    font-size: 16px;
+    color: #FC9B00;
+  }
+
+  .carousel-paragraph{
+    font-size: 14px;
   }
 
   .carousel-items-grid {
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row;
+    justify-content: space-between; /* Align items in the same row */
+    gap: 10px; /* Reduce gap between items */
   }
 
   .carousel-item img {
     width: 60px;
     height: 60px;
+    border: 3px solid #FFF; /* Change border color to white */
   }
 }

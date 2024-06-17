@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import './HeroSection.css';
-import carouselImage from '../../images/homepage-carousal-1.jpg';
+import carouselImage1 from '../../images/homepage-carousal-1.jpg';
+import carouselImage2 from '../../images/homepage-carousal-2.jpg';
+import carouselImage3 from '../../images/homepage-carousal-3.jpg';
 import carouselSubImage1 from '../../images/homepage-carousal-sub-1.png';
 import carouselSubImage2 from '../../images/homepage-carousal-sub-2.png';
 import carouselSubImage3 from '../../images/homepage-carousal-sub-3.png';
@@ -21,14 +23,14 @@ const carouselData = [
       { img: carouselSubImage3, title: 'Global Case Management' }
     ],
     buttonText: 'Read More',
-    image: carouselImage
+    image: carouselImage1
   },
   {
     title: <>Innovation through <span>AI</span></>,
     subtitle: "Let's get started",
     paragraph: "Here is some paragraph text for the second slide. This slide doesn't have a grid but instead contains a block of text.",
     buttonText: 'Read More',
-    image: carouselImage
+    image: carouselImage2
   },
   {
     title: "Our Services",
@@ -39,7 +41,7 @@ const carouselData = [
       { img: carouselSubImage6, title: 'ERP' }
     ],
     buttonText: 'Read More',
-    image: carouselImage
+    image: carouselImage3
   },
   {
     title: "Our SAP Competencies",
@@ -50,7 +52,7 @@ const carouselData = [
       { img: carouselSubImage9 }
     ],
     buttonText: 'Read More',
-    image: carouselImage
+    image: carouselImage1
   }
 ];
 

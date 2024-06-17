@@ -22,15 +22,16 @@
   border-top: 2px solid #000; /* Default color */
   margin: 10px 0;
   position: relative;
-  left: -100%;
-  transition: left 1s ease-in-out;
+  left: -100%; /* Initial state for animation */
+  opacity: 0; /* Initial state for animation */
 }
 
 .divider.in-view {
   left: 0;
+  opacity: 1;
+  transition: left 2s ease, opacity 2s ease;
 }
 
-/* Mobile view */
 @media (max-width: 767px) {
   .section-title h2 {
     font-size: 28px !important;

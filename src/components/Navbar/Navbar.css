@@ -6,7 +6,7 @@
   justify-content: center;
   top: 0;
   left: 0;
-  z-index: 10; /* Ensure navbar is on top of other content */
+  z-index: 1000; /* Ensure navbar is on top of other content */
   transition: background-color 0.3s ease-in-out;
   background-color: #fff;
 }
@@ -21,6 +21,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 20px;
+  z-index: 1001;
 }
 
 .logo-container {

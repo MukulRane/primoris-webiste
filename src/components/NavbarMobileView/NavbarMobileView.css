@@ -1,0 +1,217 @@
+@import url('../../fonts/fonts.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
+.mobile-view-navbar-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 1000;
+  transition: background-color 0.3s ease-in-out;
+  background-color: #fff;
+  position: relative; /* Ensure the container moves with the page */
+}
+
+.mobile-view-navbar-container.transparent {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.mobile-view-navbar {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.mobile-view-logo-container {
+  max-width: 240px;
+  max-height: 162px;
+}
+
+.mobile-view-logo {
+  width: 100%;
+  height: auto;
+  transition: all 0.3s ease-in-out;
+  opacity: 0.7;
+}
+
+.mobile-view-navbar nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  text-align: left;
+}
+
+.mobile-view-about-us-link {
+  color: #6EC1E4;
+  text-decoration: none;
+  display: block;
+  padding: 18px 40px;
+  font-family: 'Dosis', sans-serif;
+  font-size: 15px;
+  border-bottom: 1px solid #e3e3e3; /* Light grey divider */
+}
+
+.mobile-view-navbar nav ul li {
+  display: inline;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 0 10px;
+}
+
+.mobile-view-navbar nav ul li a {
+  color: #0a0000;
+  text-decoration: none;
+  position: relative;
+}
+
+.mobile-view-navbar nav ul li a,
+.mobile-view-navbar nav ul li .mobile-view-dropdown-title {
+  color: #6EC1E4;
+}
+
+.mobile-view-mobile-menu-toggle {
+  display: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.mobile-view-mobile-menu-toggle i {
+  font-size: 24px;
+  color: #0a0000;
+  margin-right: 10px;
+}
+
+.mobile-view-toggle-text {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #0a0000;
+}
+
+.mobile-view-mobile-menu {
+  display: none;
+  flex-direction: column;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  text-align: left;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.mobile-view-mobile-menu a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.mobile-view-mobile-menu a {
+  background-color: #ddd;
+  color: black;
+}
+
+.mobile-view-dropdown-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  color: #333;
+  padding: 18px 40px;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: 'Dosis', sans-serif;
+  background-color: #fff;
+  border-bottom: 1px solid #e3e3e3; /* Light grey divider */
+}
+
+.dropdown-sign {
+  font-size: 20px; /* Increase the font size for the + and - signs */
+}
+
+.mobile-view-dropdown-content {
+  list-style: none;
+  padding-left: 20px;
+  background-color: #f4f4f4;
+}
+
+.mobile-view-dropdown-content li a {
+  color: #333;
+  padding: 12px 40px;
+  text-align: left;
+  display: block;
+  background-color: #f4f4f4;
+  text-decoration: none;
+  font-family: 'Dosis', sans-serif;
+}
+
+@media (max-width: 768px) {
+  .mobile-view-navbar {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .mobile-view-navbar nav {
+    display: none;
+  }
+
+  .mobile-view-mobile-menu-toggle {
+    display: flex;
+    margin-left: 50px;
+  }
+
+  .mobile-view-nav-open {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #fff;
+    color: white;
+    padding: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-height: 70vh;
+    overflow-y: auto;
+    position: absolute; /* Ensure it overlays on top */
+    top: 75px; /* Adjust to align below the navbar */
+    left: 0;
+  }
+
+  .mobile-view-nav-open ul {
+    flex-direction: column;
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+  }
+
+  .mobile-view-nav-open ul li a {
+    color: #333;
+    padding: 18px 40px;
+    text-align: left;
+    text-decoration: none;
+    font-family: 'Dosis', sans-serif;
+  }
+
+  .mobile-view-mobile-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #ebebeb;
+    color: white;
+    text-decoration: none;
+    text-align: left;
+    padding: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-height: 70vh;
+    overflow-y: auto;
+    position: absolute; /* Ensure it overlays on top */
+    top: 75px; /* Adjust to align below the navbar */
+    left: 0;
+  }
+}

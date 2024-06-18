@@ -1,6 +1,7 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar/Navbar';
+import NavbarMobileView from './components/NavbarMobileView/NavbarMobileView'; // Import the mobile navbar component
 import Footer from './components/Footer/Footer';
 import TechnicalConsulting from './pages/TechnicalConsulting/TechnicalConsulting';
 import HomePage from './pages/HomePage/HomePage';
@@ -33,12 +34,16 @@ import Blogs from './pages/Blogs/Blogs';
 import SapSupplyChainManagement from './pages/SapSupplyChainManagement/SapSupplyChainManagement';
 import AboutUsPage from './pages/AboutUs/AboutUs';
 import ContactUs from './pages/ContactUs/ContactUs';
+import { WindowDimensionsProvider, useWindowDimensions } from './WindowDimensionsProvider';
 
 function App() {
+  const { width } = useWindowDimensions();
+  const isMobile = width < 768;
+
   return (
     <div className="App">
       <header className="App-header">
-        <Navbar />
+        {isMobile ? <NavbarMobileView /> : <Navbar />}
       </header>
       <main>
         <Routes>
@@ -80,4 +85,10 @@ function App() {
   );
 }
 
-export default App;
+const AppWrapper = () => (
+  <WindowDimensionsProvider>
+    <App />
+  </WindowDimensionsProvider>
+);
+
+export default AppWrapper;

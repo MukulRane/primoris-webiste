@@ -12,6 +12,9 @@ import carouselSubImage6 from '../../images/homepage-carousal-sub-6.svg';
 import carouselSubImage7 from '../../images/homepage-carousal-sub-7.png';
 import carouselSubImage8 from '../../images/homepage-carousal-sub-8.png';
 import carouselSubImage9 from '../../images/homepage-carousal-sub-9.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
+
 
 const carouselData = [
   {
@@ -205,8 +208,8 @@ const HeroSection = () => {
                 <div className="carousel-footer">
                   <button className="carousel-button">{slide.buttonText}</button>
                   <div className="carousel-arrows">
-                    <span className="arrow-left" onClick={prevSlide}></span>
-                    <span className="arrow-right" onClick={nextSlide}></span>
+                    <FontAwesomeIcon icon={faArrowLeft} className="arrow-left" onClick={prevSlide} />
+                    <FontAwesomeIcon icon={faArrowRight} className="arrow-right" onClick={nextSlide} />
                   </div>
                 </div>
               </div>

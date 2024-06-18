@@ -15,7 +15,7 @@ const DataScienceConsulting = () => {
       <DataScienceOfferSection />
       <ModelsOfCollaborationSection />
       <TechnologiesMethodsSection />
-      <RelatedServicesSection />
+      {/* <RelatedServicesSection /> */}
       <ContactForm />
     </div>
   );

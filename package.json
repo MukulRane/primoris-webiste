@@ -1,7 +1,7 @@
 {
   "homepage": "https://MukulRane.github.io/primoris-website",
   "name": "primoris-website",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.5.2",

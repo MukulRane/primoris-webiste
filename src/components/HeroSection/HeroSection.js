@@ -62,6 +62,7 @@ const HeroSection = () => {
   const intervalRef = useRef(null);
   const bottomRightBoxRef = useRef(null);
   const topLeftBoxRef = useRef(null);
+  const overlayRef = useRef(null);
 
   useEffect(() => {
     startInterval();
@@ -70,14 +71,17 @@ const HeroSection = () => {
 
   useEffect(() => {
     if (bottomRightBoxRef.current && topLeftBoxRef.current) {
-      // Remove both animations
       bottomRightBoxRef.current.classList.remove('animate-grow', 'animate-shrink');
       topLeftBoxRef.current.classList.remove('animate-grow', 'animate-shrink');
       void bottomRightBoxRef.current.offsetWidth; // Trigger reflow to restart the animation
       void topLeftBoxRef.current.offsetWidth; // Trigger reflow to restart the animation
-      // Add grow animations
       bottomRightBoxRef.current.classList.add('animate-grow');
       topLeftBoxRef.current.classList.add('animate-grow');
+    }
+    if (overlayRef.current) {
+      overlayRef.current.classList.remove('animate-grow-mobile', 'animate-shrink-mobile');
+      void overlayRef.current.offsetWidth; // Trigger reflow to restart the animation
+      overlayRef.current.classList.add('animate-grow-mobile');
     }
   }, [currentSlide]);
 
@@ -97,12 +101,15 @@ const HeroSection = () => {
 
   const nextSlide = () => {
     setTransitioning(true);
-    // Add shrink animations
     if (bottomRightBoxRef.current && topLeftBoxRef.current) {
       bottomRightBoxRef.current.classList.remove('animate-grow');
       bottomRightBoxRef.current.classList.add('animate-shrink');
       topLeftBoxRef.current.classList.remove('animate-grow');
       topLeftBoxRef.current.classList.add('animate-shrink');
+    }
+    if (overlayRef.current) {
+      overlayRef.current.classList.remove('animate-grow-mobile');
+      overlayRef.current.classList.add('animate-shrink-mobile');
     }
     setTimeout(() => {
       setCurrentSlide((prev) => (prev === carouselData.length - 1 ? 0 : prev + 1));
@@ -112,12 +119,15 @@ const HeroSection = () => {
 
   const prevSlide = () => {
     setTransitioning(true);
-    // Add shrink animations
     if (bottomRightBoxRef.current && topLeftBoxRef.current) {
       bottomRightBoxRef.current.classList.remove('animate-grow');
       bottomRightBoxRef.current.classList.add('animate-shrink');
       topLeftBoxRef.current.classList.remove('animate-grow');
       topLeftBoxRef.current.classList.add('animate-shrink');
+    }
+    if (overlayRef.current) {
+      overlayRef.current.classList.remove('animate-grow-mobile');
+      overlayRef.current.classList.add('animate-shrink-mobile');
     }
     setTimeout(() => {
       setCurrentSlide((prev) => (prev === 0 ? carouselData.length - 1 : prev - 1));
@@ -132,6 +142,7 @@ const HeroSection = () => {
       onMouseLeave={startInterval}
     >
       <div className="carousel-container">
+        <div ref={overlayRef} className="overlay-container animate-grow-mobile"></div>
         <div ref={topLeftBoxRef} className="top-left-box animate-grow"></div>
         <div ref={bottomRightBoxRef} className="bottom-right-box animate-grow"></div>
         {carouselData.map((slide, index) => (

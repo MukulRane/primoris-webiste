@@ -1,3 +1,4 @@
+/* HeroSection.css */
 .hero-wrapper {
   width: 100%;
   margin-bottom: 80px;
@@ -333,11 +334,54 @@
 
 @media (max-width: 767px) {
   .carousel-container {
+    position: relative;
     padding: 40px 0px; /* Increase padding */
     padding-bottom: 0;
-    background-color: #3a8bc8; /* Change background color */
+    background-color: #fff; /* White background for mobile view */
     max-width: 404px; /* Limit max-width */
     margin: 0 auto; /* Center the container */
+  }
+
+  .overlay-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #3a8bc8;
+    z-index: 0; /* Ensure it is below the carousel content */
+    animation: growUpMobile 2s ease-in-out forwards;
+  }
+
+  @keyframes growUpMobile {
+    from {
+      height: 0;
+      opacity: 0;
+    }
+    to {
+      height: 100%;
+      opacity: 1;
+    }
+  }
+
+  @keyframes shrinkDownMobile {
+    from {
+      height: 100%;
+      opacity: 1;
+    }
+    to {
+      height: 0;
+      opacity: 0;
+    }
+  }
+
+  .overlay-container.animate-grow-mobile {
+    animation: growUpMobile 2s ease-in-out forwards;
+  }
+
+  .overlay-container.animate-shrink-mobile {
+    animation: shrinkDownMobile 0s ease-in-out forwards;
   }
 
   .carousel-text-column .carousel-subtitle,
@@ -363,6 +407,7 @@
   .carousel-content {
     flex-direction: column;
     align-items: flex-start;
+    z-index: 1; /* Ensure carousel content is above the overlay */
   }
 
   .carousel-text-column {
@@ -410,6 +455,10 @@
 
   .carousel-paragraph {
     font-size: 14px;
+  }
+
+  .carousel-text-column .carousel-title2 span {
+    color: #fff; /* Blue color for AI */
   }
 
   .carousel-items-grid {

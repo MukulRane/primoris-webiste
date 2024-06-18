@@ -1,5 +1,6 @@
 import React from 'react';
 import './Footer.css';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -19,39 +20,39 @@ const Footer = () => {
           <div className="footer-links">
             <div className="footer-column">
               <h4>SERVICES</h4>
-              <a href="#">BUSINESS CONSULTING</a>
-              <a href="#">MANAGEMENT CONSULTING</a>
-              <a href="#">TECHNICAL CONSULTING</a>
-              <a href="#">RISK MANAGEMENT</a>
-              <a href="#">ANALYTICS TOOLKIT</a>
-              <a href="#">DATA SCIENCE</a>
-              <a href="#">QUALITY ASSURANCE</a>
+              <Link to="/business-consulting">BUSINESS</Link>
+              <Link to="/management-consulting">MANAGEMENT CONSULTING</Link>
+              <Link to="/technical-consulting">TECHNICAL CONSULTING</Link>
+              <Link to="/risk-management">RISK MANAGEMENT</Link>
+              <Link to="/sap-consulting">ANALYTICS TOOLKIT</Link>
+              <Link to="/data-science-consulting">DATA SCIENCE</Link>
+              <Link to="/quality-assurance">QUALITY ASSURANCE</Link>
             </div>
             <div className="footer-column">
               <h4>SAP CORE COMPETENCIES</h4>
-              <a href="#">S/4 HANA</a>
-              <a href="#">CLOUD ANALYTICS</a>
-              <a href="#">FIORI</a>
-              <a href="#">CRM</a>
-              <a href="#">HIBRIS</a>
-              <a href="#">SUPPLY CHAIN MANAGEMENT</a>
+              <Link to="/sap-s4-hana-service">S/4 HANA</Link>
+              <Link to="/sap-cloud-analytics">CLOUD ANALYTICS</Link>
+              <Link to="/sap-fiori">FIORI</Link>
+              <Link to="/sap-crm">CRM</Link>
+              <Link to="/sap-hybris">HIBRIS</Link>
+              <Link to="/sap-supply-chain-management">SUPPLY CHAIN MANAGEMENT</Link>
             </div>
             <div className="footer-column">
               <h4>SOLUTIONS</h4>
-              <a href="#">ENTERPRISE MANAGED ARCHIVES</a>
-              <a href="#">GLOBAL CASE MANAGEMENT</a>
-              <a href="#">DB LUMINOUS</a>
-              <a href="#">MTECHNICIAN</a>
-              <a href="#">ORGCHART VIEWER</a>
-              <a href="#">MASSET MANAGEMENT</a>
+              <Link to="/enterprise-managed-archive">ENTERPRISE MANAGED ARCHIVES</Link>
+              <Link to="/enterprise-managed-archive-sap">GLOBAL CASE MANAGEMENT</Link>
+              <Link to="/global-case-management-ediscovery">DB LUMINOUS</Link>
+              <Link to="/mtechnician">MTECHNICIAN</Link>
+              <Link to="/orgchart-viewer">ORGCHART VIEWER</Link>
+              <Link to="/asset-management">MASSET MANAGEMENT</Link>
             </div>
             <div className="footer-column">
               <h4>QUICK LINKS</h4>
-              <a href="#">ABOUT US</a>
-              <a href="#">BLOGS</a>
-              <a href="#">NEWS</a>
-              <a href="#">CAREERS</a>
-              <a href="#">CONTACT</a>
+              <Link to="/about-us">ABOUT US</Link>
+              <Link to="/blogs">BLOGS</Link>
+              <Link to="/news">NEWS</Link>
+              <Link to="/careers">CAREERS</Link>
+              <Link to="/contact-us">CONTACT</Link>
             </div>
           </div>
         </div>

@@ -2,6 +2,7 @@ import React, { useRef, useEffect, useState } from 'react';
 import './LatestNews.css';
 import SectionTitle from '../SectionTitle/SectionTitle';
 import CustomButton from '../CustomButton/CustomButton';
+import { Link } from 'react-router-dom';
 
 const LatestNews = () => {
   const [visibleItems, setVisibleItems] = useState({});
@@ -78,7 +79,7 @@ const LatestNews = () => {
             </div>
           ))}
           <div className="homepage-news-item-button">
-            <CustomButton text="Know More" />
+            <Link to="/news"><CustomButton text="Know More" /></Link>
           </div>
         </div>
         <div className="homepage-news-image">
